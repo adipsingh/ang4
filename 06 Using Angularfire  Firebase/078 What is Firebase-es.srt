@@ -1,0 +1,228 @@
+1
+00:00:02,300 --> 00:00:11,630
+Entonces, qu es firebase firebase? Es una copia fcil de usar y si esta es nuestra aplicacin normal configurada donde tenemos un cliente para
+
+2
+00:00:11,630 --> 00:00:18,260
+que el navegador y el servidor enviemos solicitudes de ida y vuelta y el servidor devuelva las
+
+3
+00:00:18,580 --> 00:00:27,770
+pginas de correo electrnico de HG o en el En el caso de una nica pgina nica a la vez, Firebase es relevante para
+
+4
+00:00:27,770 --> 00:00:29,530
+el sitio de servicio.
+
+5
+00:00:29,750 --> 00:00:36,740
+Se puede utilizar como un proveedor de alojamiento para alojar la aplicacin normal, pero ms que eso, se
+
+6
+00:00:36,740 --> 00:00:44,690
+puede utilizar como un back-end al que nos conectamos para almacenar datos. Busca datos ejecutando todo tipo de clculos o usuarios
+
+7
+00:00:44,840 --> 00:00:46,500
+de autenticacin muy importantes.
+
+8
+00:00:46,790 --> 00:00:53,920
+De hecho, Firebase cuenta con un par de servicios diferentes y tiene servicios conectados a bases de datos en
+
+9
+00:00:54,060 --> 00:01:01,630
+tiempo real sin tiempo real, simplemente significa que las bases de datos que puede usar realmente se pueden usar de
+
+10
+00:01:01,630 --> 00:01:09,380
+una manera que use enrutadores WEP detrs de las escenas para que pueda activarse actualizaciones en su pgina en su aplicacin
+
+11
+00:01:09,380 --> 00:01:13,610
+angular sin la necesidad de enviar solicitudes posteriores de API de descanso.
+
+12
+00:01:13,610 --> 00:01:15,230
+Pero ms sobre eso ms tarde.
+
+13
+00:01:15,260 --> 00:01:20,950
+Por lo tanto, ofrecen soluciones de bases de datos sin bases de datos de seguimiento para ser precisos.
+
+14
+00:01:20,990 --> 00:01:23,540
+Estas bases de datos se usan para almacenar datos sincronizados.
+
+15
+00:01:23,570 --> 00:01:25,570
+Puede alcanzarlos mientras descansa.
+
+16
+00:01:25,570 --> 00:01:33,710
+AP Ya soy oficial SDK de firebase o con ngulo o fuego como aprender en este mdulo y
+
+17
+00:01:33,710 --> 00:01:37,070
+no necesita escribir ningn cdigo de servicio.
+
+18
+00:01:37,070 --> 00:01:39,320
+No es necesario crear puntos finales de descanso.
+
+19
+00:01:39,380 --> 00:01:42,400
+No necesita escribir ningn cdigo para validar datos.
+
+20
+00:01:42,500 --> 00:01:46,130
+Puedes comunicarte casi directamente con la base de datos.
+
+21
+00:01:46,160 --> 00:01:48,330
+Entonces para usted parece que lo hace en el medio.
+
+22
+00:01:48,350 --> 00:01:53,480
+Por supuesto, hay una capa que aunque acta como una cura para usted, pero puede acceder fcilmente a la
+
+23
+00:01:53,480 --> 00:01:54,250
+base de datos.
+
+24
+00:01:54,320 --> 00:01:56,970
+Esa es la clave de estos servicios.
+
+25
+00:01:57,150 --> 00:02:03,520
+La base de datos firebase del sitio tiene un servicio de indicacin de apagado con este servicio, puede agregar fcilmente registro de
+
+26
+00:02:03,530 --> 00:02:04,820
+usuario e iniciar sesin.
+
+27
+00:02:04,820 --> 00:02:05,700
+Puedes alcanzarlo
+
+28
+00:02:05,740 --> 00:02:13,670
+Adems, por qu detener API o Firebase STK aqu? No tiene que escribir ningn cdigo del lado del servidor.
+
+29
+00:02:13,790 --> 00:02:20,780
+Y si usas el SDK, incluso en la parte frontal obtienes muchas funciones de utilidad, como almacenar
+
+30
+00:02:20,780 --> 00:02:25,640
+el token y as sucesivamente, firebase tambin ofrece servicios de almacenamiento.
+
+31
+00:02:25,680 --> 00:02:33,230
+Por lo tanto, los servicios de almacenamiento de archivos que ayudan a cargar archivos descargan tambin todo el extremo STK de firebase
+
+32
+00:02:33,270 --> 00:02:33,980
+conectado aqu.
+
+33
+00:02:34,020 --> 00:02:36,580
+No se requiere un cdigo del lado del servidor.
+
+34
+00:02:36,600 --> 00:02:42,960
+Adems, firebase tiene servicios analticos donde puede integrar anlisis en la base de Firefox de sus aplicaciones. Es
+
+35
+00:02:43,050 --> 00:02:48,080
+importante mencionar que en este punto Alls es un respaldo popular y para aplicaciones mviles.
+
+36
+00:02:48,090 --> 00:02:54,660
+Entonces, para Android o Iowa como aplicaciones all, puede integrar incluso un poco ms de servicios analticos para aplicaciones web.
+
+37
+00:02:55,000 --> 00:03:01,320
+Y, finalmente, un servicio relativamente nuevo son las funciones de la nube en la nube como un servicio en el
+
+38
+00:03:01,320 --> 00:03:07,820
+que puede escribir su propio cdigo y ejecutarlo en el Mont. adjuntndolo a ciertas fuentes de eventos.
+
+39
+00:03:07,830 --> 00:03:14,580
+Ahora, lo bueno de Firebase en todos estos servicios no es solo la oferta de servicios, sino
+
+40
+00:03:14,670 --> 00:03:22,110
+que aqu todos los recursos se administran para usted. Todos los servidores se administran por usted, no es necesario
+
+41
+00:03:22,110 --> 00:03:24,810
+aprovisionar la administracin y los servidores seguros.
+
+42
+00:03:24,900 --> 00:03:26,360
+As que eso es todo por ti.
+
+43
+00:03:26,370 --> 00:03:31,760
+Usted acaba de usar los servicios y se le cobra en base a lo que paga.
+
+44
+00:03:31,770 --> 00:03:35,440
+Entonces, si no ests usando mucho los datos, es esencialmente gratis para ti.
+
+45
+00:03:35,490 --> 00:03:41,940
+Tienen un nivel gratuito generoso y si su uso se hace cada vez ms grande porque ms personas
+
+46
+00:03:41,940 --> 00:03:47,220
+comienzan a usar su aplicacin web mientras espera ganar dinero y esto tambin le
+
+47
+00:03:47,250 --> 00:03:49,880
+costar dinero, pero seguir siendo muy rentable.
+
+48
+00:03:50,070 --> 00:03:55,080
+Entonces estos son todos los servicios basados en fuego en este mdulo.
+
+49
+00:03:55,290 --> 00:04:02,010
+Solo me enfocar en las bases de datos en tiempo real y la autenticacin, aunque no todos usamos el fuego angular
+
+50
+00:04:02,190 --> 00:04:06,780
+para usar estos servicios en la aplicacin angular y ver lo fcil que es.
+
+51
+00:04:06,780 --> 00:04:14,660
+Ahora, una nota importante es que esta base de Firebase no es mucho ms de lo que usamos en la aplicacin de visualizacin.
+
+52
+00:04:14,820 --> 00:04:20,940
+Pero esto, por supuesto, es un curso centrado en la aplicacin y se trata de angular en su ncleo.
+
+53
+00:04:20,970 --> 00:04:25,860
+Por lo tanto, le dir que le mostraremos cmo usamos los servicios que usamos si desea obtener ms
+
+54
+00:04:25,860 --> 00:04:26,690
+informacin sobre firebase.
+
+55
+00:04:26,850 --> 00:04:29,190
+Por favor, comunquese con su pgina oficial.
+
+56
+00:04:29,190 --> 00:04:33,070
+Puede encontrar enlaces tiles en una conferencia al final de este mdulo.
+
+57
+00:04:33,080 --> 00:04:38,870
+Ahora, con eso, echemos un vistazo a los servicios que vamos a usar y cmo los usamos.
+

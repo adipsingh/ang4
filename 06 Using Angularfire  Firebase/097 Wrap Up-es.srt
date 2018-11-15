@@ -1,0 +1,40 @@
+1
+00:00:02,150 --> 00:00:05,790
+En este mdulo hicimos muchas cosas geniales.
+
+2
+00:00:06,100 --> 00:00:12,010
+Agregamos firebase y el ngulo de la tienda de bomberos para ser precisos.
+
+3
+00:00:12,160 --> 00:00:17,290
+Lo conectamos a nuestro espacio angular a travs del ngulo de fuego.
+
+4
+00:00:17,320 --> 00:00:24,960
+Aprender sobre las diversas formas de utilizar fuego angular para configurar diferentes tipos de suscripciones.
+
+5
+00:00:25,060 --> 00:00:32,110
+Refirindose a los incendios angulares Stallworth para trabajar con datos para manipular datos para agregar datos y obtener
+
+6
+00:00:32,110 --> 00:00:38,440
+datos, por supuesto, y aprendi cmo implementar la autenticacin con Angel de fuego y fuego base y
+
+7
+00:00:38,440 --> 00:00:43,360
+cmo proteger sus recursos de servicio mediante el enfoque de autenticacin de datos.
+
+8
+00:00:43,360 --> 00:00:51,160
+Ahora obtenemos una aplicacin en tiempo real que se alimenta de diferentes instancias de aplicaciones en ejecucin, por lo que
+
+9
+00:00:51,250 --> 00:00:59,380
+compartimos datos en tiempo real sin volver a cargar la pgina y dira que este es un estado realmente genial para
+
+10
+00:00:59,380 --> 00:01:00,280
+esta aplicacin.
+

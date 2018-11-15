@@ -1,0 +1,104 @@
+1
+00:00:02,220 --> 00:00:03,890
+O que faz o fogo do ngulo?
+
+2
+00:00:04,380 --> 00:00:11,230
+Se tivermos o firebase nosso aplicativo angular, ento o fogo angular atuar como uma ponte entre essas duas coisas.
+
+3
+00:00:11,460 --> 00:00:16,890
+Na verdade, temos mais opes do que apenas usar o ngulo de tiro, j que o pai 
+
+4
+00:00:16,890 --> 00:00:21,290
+um pacote que no  disponibilizado pela equipe do Firebase, mas que compra nossos desenvolvedores.
+
+5
+00:00:21,510 --> 00:00:25,800
+Ento no  a soluo oficial, mas  claro que  absolutamente bom usar.
+
+6
+00:00:25,890 --> 00:00:29,470
+S estou enfatizando isso para enfatizar que voc tem alternativas.
+
+7
+00:00:29,610 --> 00:00:31,790
+Voc no pode, por exemplo, usar vrios descansos.
+
+8
+00:00:31,800 --> 00:00:38,820
+A API  fornecida pelo Firebase que permitiria que voc usasse o H angular para o cliente se conectar aos dados de armazenamento
+
+9
+00:00:38,910 --> 00:00:42,780
+do Firebase para buscar dados e autenticar os usurios para fazerem tudo isso.
+
+10
+00:00:42,930 --> 00:00:48,930
+Se voc passou pelo meu curso de Guia Completo Angular, viu a API de deteno em ao para o banco
+
+11
+00:00:48,930 --> 00:00:50,430
+de dados em tempo real.
+
+12
+00:00:50,700 --> 00:00:52,940
+E no vamos usar isso neste curso.
+
+13
+00:00:52,980 --> 00:00:59,070
+Tambm podemos usar o firebase SDK oficial, que  um pacote javascript que podemos usar em qualquer
+
+14
+00:00:59,070 --> 00:01:02,960
+projeto de javascript, e isso tambm  verdade para projetos angulares.
+
+15
+00:01:03,020 --> 00:01:10,080
+Novamente, se voc saiu do meu curso de guia completo, viu o DSK em ao, e usamos isso para o mdulo
+
+16
+00:01:10,080 --> 00:01:15,920
+de autenticao, mas ele tambm no utilizar isso e discourar. Em vez disso, usaremos o fogo angular.
+
+17
+00:01:15,930 --> 00:01:21,830
+Um pacote de terceiros que na verdade tambm nos fornece todos os recursos so muitos dos recursos que
+
+18
+00:01:21,840 --> 00:01:24,200
+o STK o SDK oficial nos oferece.
+
+19
+00:01:24,360 --> 00:01:30,160
+Mas de uma maneira que abraa observveis e integra-se bem em angular.
+
+20
+00:01:30,630 --> 00:01:36,450
+Voc s pode us-lo em formularias anulares que  importante que voc no possa us-lo
+
+21
+00:01:36,540 --> 00:01:43,200
+em outros frameworks, mas ele se integra muito bem e faz uso do firebase um recesso, voc ver
+
+22
+00:01:43,200 --> 00:01:50,880
+que a parte importante  aquela natureza observvel que est absolutamente alinhada com A estratgia de todos os pescadores est
+
+23
+00:01:50,880 --> 00:01:53,050
+usando wolds observveis sempre que possvel.
+
+24
+00:01:53,460 --> 00:01:59,770
+Agora, para isso,  claro que precisamos entender o que observveis e assinaturas, e assim por diante, realmente so.
+
+25
+00:01:59,790 --> 00:02:04,020
+Agora isso  algo que eu vou dar uma olhada na prxima palestra se voc souber tudo sobre isso.
+
+26
+00:02:04,020 --> 00:02:06,170
+Sinta-se  vontade para pular essa aula,  claro.
+

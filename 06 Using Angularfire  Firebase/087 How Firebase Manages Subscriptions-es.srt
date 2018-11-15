@@ -1,0 +1,160 @@
+1
+00:00:02,420 --> 00:00:05,910
+En la ltima conferencia reestructuramos nuestro cdigo.
+
+2
+00:00:06,200 --> 00:00:14,510
+Ponemos la suscripcin en ngulo o fuego o ngulo o fuego en el servicio de entrenamiento.
+
+3
+00:00:14,540 --> 00:00:20,270
+As que buscamos los ejercicios disponibles en ese servicio y configuramos este ao de suscripcin en el
+
+4
+00:00:20,270 --> 00:00:21,560
+nuevo componente de capacitacin.
+
+5
+00:00:21,560 --> 00:00:27,940
+Entonces, solo nos suscribimos a los cambios en estos son los ejercicios de balleneros y no directamente al fuego angular.
+
+6
+00:00:28,150 --> 00:00:33,980
+Esta es solo una configuracin posible que elimina la complejidad de nuestra plantilla o de
+
+7
+00:00:34,190 --> 00:00:36,670
+nuestro componente y la traslada al servicio.
+
+8
+00:00:36,680 --> 00:00:45,110
+Ahora bien, es importante tener en cuenta una cosa, aunque llamamos a los ejercicios disponibles de recuperacin cada vez que se crea el
+
+9
+00:00:45,110 --> 00:00:46,710
+nuevo componente de capacitacin.
+
+10
+00:00:46,900 --> 00:00:51,630
+Y este sera el caso cada vez que navegamos hacia l si nos alejamos de l.
+
+11
+00:00:51,980 --> 00:01:00,370
+Nunca eliminamos la suscripcin existente que se inicializa de hecho, los ejercicios disponibles la configuramos
+
+12
+00:01:00,380 --> 00:01:03,410
+cuando llamamos a este mtodo.
+
+13
+00:01:03,740 --> 00:01:07,290
+Ahora veamos si eso es un problema en el mtodo SUBSCRIBE.
+
+14
+00:01:07,310 --> 00:01:16,400
+En el servicio, simplemente hagamos ejercicios de registro de consola si solo utiliza automticamente una suscripcin a la vez, entonces no necesitamos hacer una
+
+15
+00:01:16,400 --> 00:01:21,950
+limpieza y podemos averiguar si ese es el caso por el hecho de que solo
+
+16
+00:01:21,950 --> 00:01:26,800
+vemos un registro de consola con una matriz de todos los ejercicios.
+
+17
+00:01:26,990 --> 00:01:34,280
+Si navegamos hacia adelante y hacia atrs para una nueva capacitacin y obtenemos ms y ms ejercicios
+
+18
+00:01:34,280 --> 00:01:36,500
+bloqueados, definitivamente debemos limpiarlo manualmente.
+
+19
+00:01:36,500 --> 00:01:38,060
+As que vamos a guardar esto.
+
+20
+00:01:38,060 --> 00:01:43,420
+Y luego volvemos a encerrarnos para ingresar algunos datos ficticios.
+
+21
+00:01:44,120 --> 00:01:47,960
+Y vemos un registro la primera vez que estamos aqu.
+
+22
+00:01:48,320 --> 00:01:53,810
+Ahora vayamos a ejercicios pasados y volvamos a Nuevo ejercicio.
+
+23
+00:01:53,990 --> 00:01:55,520
+No vemos mucho aqu.
+
+24
+00:01:55,550 --> 00:01:55,820
+Derecha.
+
+25
+00:01:55,820 --> 00:01:57,760
+Entonces nada cambi.
+
+26
+00:01:57,950 --> 00:02:06,380
+Si ahora comienzo un ejercicio aqu y vuelvo ahora, vemos que se est imprimiendo otra ley, pero esta es solo
+
+27
+00:02:06,380 --> 00:02:06,650
+una.
+
+28
+00:02:06,650 --> 00:02:07,340
+Mantenlo en mente.
+
+29
+00:02:07,340 --> 00:02:08,980
+No vimos dos aqu.
+
+30
+00:02:09,020 --> 00:02:11,100
+Puedo probar esto borrando el registro.
+
+31
+00:02:11,240 --> 00:02:15,600
+Y otra vez comenzar un ejercicio y regresar.
+
+32
+00:02:15,980 --> 00:02:17,590
+Ahora es solo un registro.
+
+33
+00:02:17,810 --> 00:02:26,780
+As que, aunque recargamos este componente y, por lo tanto, volvimos a ejecutar los ejercicios disponibles de fecche, solo obtenemos
+
+34
+00:02:26,780 --> 00:02:27,890
+un registro.
+
+35
+00:02:27,890 --> 00:02:30,500
+Entonces esta suscripcin se reemplaza a s misma.
+
+36
+00:02:30,590 --> 00:02:32,330
+No estamos contaminando la memoria.
+
+37
+00:02:32,330 --> 00:02:36,200
+Solo tenemos uno y esto es algo que debes tener en cuenta.
+
+38
+00:02:36,290 --> 00:02:40,660
+As que, para nosotros, dessous nos cost mucho.
+
+39
+00:02:40,760 --> 00:02:47,210
+Y con ese conocimiento, se gestiona a medida que avanzamos y hacemos cosas como, por ejemplo, ejercicios
+
+40
+00:02:47,240 --> 00:02:50,680
+de tienda que completamos en la base de datos.
+

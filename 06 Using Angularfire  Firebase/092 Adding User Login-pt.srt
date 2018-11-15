@@ -1,0 +1,100 @@
+1
+00:00:02,500 --> 00:00:06,660
+Ento, na ltima palestra, ns adicionamos a inscrio e assinamos o Firebase.
+
+2
+00:00:06,970 --> 00:00:10,890
+E agora nosso aplicativo est quebrado porque no  mais possvel armazenar um usurio.
+
+3
+00:00:11,070 --> 00:00:13,130
+No, no vou mais armazenar um aqui.
+
+4
+00:00:13,300 --> 00:00:18,390
+Em vez disso, vou armazenar o que  um booleano em que inicialmente deve ser falso.
+
+5
+00:00:19,790 --> 00:00:21,440
+Agora  todo o nome do mtodo.
+
+6
+00:00:21,470 --> 00:00:25,290
+Vamos nome-lo  autenticado para no ter nenhum conflito aqui.
+
+7
+00:00:25,670 --> 00:00:27,820
+Ento,  se algum cdigo  um booleano.
+
+8
+00:00:28,070 --> 00:00:32,900
+Se fizermos log in com sucesso, off off  chamado com sucesso.
+
+9
+00:00:33,140 --> 00:00:39,760
+Ento, com todo sucesso aqui, quero definir que isso  freqentemente ditado como verdadeiro.
+
+10
+00:00:40,490 --> 00:00:49,530
+E no logout eu quero configur-lo para false e isso significa que eu posso remover essa atribuio de usurio aqui e em obter o usurio
+
+11
+00:00:49,530 --> 00:00:51,360
+eu posso me livrar disso.
+
+12
+00:00:51,360 --> 00:00:54,990
+Isso no vai funcionar  tudo em retorno palpvel mo yabber.
+
+13
+00:00:54,990 --> 00:00:58,570
+Isso  autentic-lo.
+
+14
+00:00:58,680 --> 00:01:02,180
+Se salvarmos isso, voltamos ao nosso aplicativo.
+
+15
+00:01:02,190 --> 00:01:06,130
+Vamos agora tentar entrar novamente com credenciais vlidas.
+
+16
+00:01:06,330 --> 00:01:07,340
+Agora funciona.
+
+17
+00:01:07,350 --> 00:01:10,110
+Agora podemos navegar de novo.
+
+18
+00:01:10,140 --> 00:01:18,210
+Essa  uma maneira de fazer isso e no  necessariamente o pior, mas enfrentaremos um problema se
+
+19
+00:01:18,210 --> 00:01:22,170
+realmente comearmos a trabalhar com recursos protegidos no servidor.
+
+20
+00:01:22,530 --> 00:01:30,830
+Se bloquearmos nosso banco de dados firebase para que o banco de dados de firestor tenha que provar para papai de volta e
+
+21
+00:01:30,840 --> 00:01:36,780
+para firebase que estamos ofendendo odiado e enviando um nico Boulia e no  suficiente porque
+
+22
+00:01:36,780 --> 00:01:38,410
+qualquer um poderia fazer isso.
+
+23
+00:01:38,580 --> 00:01:44,170
+Em vez disso, precisaremos enviar um token de dbito emitido para ns pelo firebase.
+
+24
+00:01:44,460 --> 00:01:49,050
+Vamos dar uma olhada no que quero dizer com isso e como aplicativos de autenticao e de pgina
+
+25
+00:01:49,050 --> 00:01:49,740
+nica realmente funcionam.
+

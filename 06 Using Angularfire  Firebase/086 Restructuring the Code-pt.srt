@@ -1,0 +1,288 @@
+1
+00:00:02,260 --> 00:00:05,660
+Ento nas ltimas palestras eu apresentei o ngulo de fogo.
+
+2
+00:00:05,710 --> 00:00:12,640
+E usamos uma mgica absorvvel combinada com alteraes de instantneos para obter exatamente os dados da nossa
+
+3
+00:00:12,700 --> 00:00:13,870
+coleo que precisamos.
+
+4
+00:00:14,230 --> 00:00:16,710
+Agora, claro, quero levar isso um passo adiante.
+
+5
+00:00:16,720 --> 00:00:20,300
+ bom podermos selecionar isso no menu suspenso.
+
+6
+00:00:20,430 --> 00:00:28,170
+Se comearmos um novo exerccio, submeteremos nosso formulrio de exerccios e depois o exerccio para ele.
+
+7
+00:00:28,170 --> 00:00:30,950
+Ns, claro, temos essa ideia que selecionamos.
+
+8
+00:00:31,110 --> 00:00:37,440
+Ento, no servio de treinamento onde ns, no final, temos o mtodo que  executado no incio do
+
+9
+00:00:37,440 --> 00:00:43,080
+exerccio, estamos tendo essa idia e estamos tentando obter um golpe de um exerccio de baleeira
+
+10
+00:00:43,080 --> 00:00:47,770
+que agora falhar porque um exerccio de baleeira aqui no  mais relevante.
+
+11
+00:00:47,790 --> 00:00:55,100
+Ns podemos realmente nos livrar disso porque no estamos diretamente buscando os exerccios em nosso componente.
+
+12
+00:00:55,100 --> 00:01:00,660
+Agora, para ser honesto, ainda faria sentido busc-lo aqui no servio.
+
+13
+00:01:00,780 --> 00:01:08,880
+Devemos ter o nosso conjunto de exerccios de baleeira aqui para que possamos usar a esttua para comear o
+
+14
+00:01:09,120 --> 00:01:11,450
+exerccio e fazer o exerccio completo.
+
+15
+00:01:11,460 --> 00:01:16,590
+Devemos apenas inicializar uma matriz morta de atualizao com dados provenientes do banco de dados.
+
+16
+00:01:17,370 --> 00:01:24,720
+Ento, o que podemos querer fazer  renomear fazer um whaleboat para buscar os exerccios disponveis
+
+17
+00:01:24,720 --> 00:01:33,840
+e pegar a lgica do novo componente de treinamento aqui e da ONG e rodar esse cdigo aqui no nosso
+
+18
+00:01:33,900 --> 00:01:35,040
+servio de treinamento.
+
+19
+00:01:35,040 --> 00:01:42,570
+Ento, vou cort-lo e ir ao servio de treinamento e executado aqui, de fato, exerccios disponveis agora.
+
+20
+00:01:42,600 --> 00:01:48,450
+Esta TB no  um projeto de lei porque ainda no injetamos esse ngulo de Firestorm no servio.
+
+21
+00:01:48,610 --> 00:01:53,630
+Vamos fazer isso e injetar algo que precisamos adicionar no injetvel aqui.
+
+22
+00:01:53,730 --> 00:01:59,730
+Agora injetvel precisa ser importado de qualquer ngulo, ento certifique-se de adicionar esta importao e, uma vez adicionado, voc pode
+
+23
+00:01:59,730 --> 00:02:05,620
+adicionar uma construo para o seu fim e verificar o banco de dados que  apenas o ngulo de tiro.
+
+24
+00:02:05,620 --> 00:02:14,010
+Armazene o objeto que voc importa de um armazenamento regular para o de fogo.
+
+25
+00:02:14,010 --> 00:02:15,270
+Ento agora isso injeta isso.
+
+26
+00:02:15,270 --> 00:02:17,070
+Agora esse cdigo funciona.
+
+27
+00:02:17,250 --> 00:02:21,410
+Agora quero preencher meus exerccios disponveis, como eu disse.
+
+28
+00:02:21,570 --> 00:02:27,570
+Ento, aqui eu vou agora adicionar subscribe e no usar mais o pipe
+
+29
+00:02:27,590 --> 00:02:37,110
+async porque eu quero usar este programa de resultados medicamente e obter meus exerccios que podemos declarar explicitamente de uma perspectiva
+
+30
+00:02:37,470 --> 00:02:42,920
+de tipos como uma srie de exerccios porque  isso que eventualmente .
+
+31
+00:02:43,080 --> 00:02:49,890
+Agora, nessa funo do erro, posso definir isso como um exerccio igual aos exerccios.
+
+32
+00:02:49,920 --> 00:02:55,230
+Ento, os exerccios estavam voltando da Firestar e agora ns o colocamos em servio.
+
+33
+00:02:55,230 --> 00:03:02,310
+O problema  que agora no podemos mais us-lo em nosso novo componente de treinamento, embora esteja quebrado agora.
+
+34
+00:03:02,310 --> 00:03:04,920
+E aqui precisamos desses novos exerccios.
+
+35
+00:03:04,920 --> 00:03:11,730
+Ento, como podemos obt-los aqui para uma boa soluo seria simplesmente emet um evento sempre
+
+36
+00:03:11,730 --> 00:03:13,280
+que recebemos novos exerccios.
+
+37
+00:03:13,560 --> 00:03:23,980
+Ento, aqui ns poderamos adicionar exerccios alterados e definidos como iguais a um novo assunto do tipo array de exerccios, porque 
+
+38
+00:03:24,040 --> 00:03:26,040
+isso que estamos emitindo.
+
+39
+00:03:26,440 --> 00:03:30,000
+E queremos acion-lo sempre que tivermos novos exerccios.
+
+40
+00:03:30,010 --> 00:03:35,850
+Ento, aqui, logo depois de guard-los, todos chamam esse exerccio de mudana.
+
+41
+00:03:35,980 --> 00:03:43,210
+E o prximo e emiti e Ray com todos os exerccios disponveis. Estou usando um novo array com
+
+42
+00:03:43,240 --> 00:03:50,320
+o operador spread para criar uma cpia para que no passemos o array original por razes de mutabilidade.
+
+43
+00:03:51,340 --> 00:03:56,200
+Ento, agora estamos emitindo isso agora podemos inscrever isso em um novo treinamento.
+
+44
+00:03:56,200 --> 00:03:58,730
+Ento aqui em NJ e eu quero fazer duas coisas.
+
+45
+00:03:58,860 --> 00:04:04,240
+Vou entrar em contato com o servio de treinamento e chamar buscar exerccios disponveis como este.
+
+46
+00:04:04,240 --> 00:04:08,160
+Isso est l para sempre chamado quando vamos para um novo treinamento.
+
+47
+00:04:08,270 --> 00:04:12,500
+Eu tambm quero assinar este assunto recm-criado.
+
+48
+00:04:12,560 --> 00:04:19,980
+Ento, em um servio de treinamento, fizemos os exerccios mudarem de assunto e eu vou assin-lo agora, desde que eu
+
+49
+00:04:19,980 --> 00:04:20,900
+assino um assunto.
+
+50
+00:04:20,960 --> 00:04:24,490
+Eu tambm quero importar inscries para que possamos cancelar a inscrio.
+
+51
+00:04:24,740 --> 00:04:30,060
+Ento eu vou importar observvel e assinatura do nosso X. J. S. seus todos, em seguida, criar minha subscrio de exerccio que  uma assinatura
+
+52
+00:04:30,080 --> 00:04:42,810
+de tipo e todos armazenam esta subscrio e subscrio de exerccio.
+
+53
+00:04:42,900 --> 00:04:45,360
+Agora, no mtodo SUBSCREVER aqui, quero
+
+54
+00:04:45,360 --> 00:04:52,080
+fazer algo aqui. Eu obtenho meus exerccios e simplesmente quero definir isso igual a este exerccio neste componente.
+
+55
+00:04:52,080 --> 00:04:57,180
+Agora este exerccio foi definido como um observvel.
+
+56
+00:04:57,180 --> 00:05:00,750
+Agora est de volta e bem a uma taxa de exerccio, como foi no incio deste curso.
+
+57
+00:05:00,750 --> 00:05:07,850
+Ns temos nossa assinatura.
+
+58
+00:05:09,420 --> 00:05:10,770
+Ns tambm devemos cancelar a inscrio se o componente for destrudo.
+
+59
+00:05:10,770 --> 00:05:14,540
+Ento vamos adicionar a interface on destroy aqui
+
+60
+00:05:14,610 --> 00:05:25,010
+e tambm importa dados de um ncleo singular e vamos l para todos e agora implementar ngi no destroy e o novo
+
+61
+00:05:25,010 --> 00:05:33,020
+componente de treinamento e disse que este exerccio  assinatura ou oleo deste exerccio desinscreva-se sempre que
+
+62
+00:05:33,110 --> 00:05:39,410
+um disco for acionado podemos comprar e tambm removemos a injeo do fogo.
+
+63
+00:05:39,410 --> 00:05:41,990
+A loja do pescador dispara o servio de armazenamento e remove essa importao.
+
+64
+00:05:41,990 --> 00:05:47,120
+Agora devemos nos informar sempre que ele fizer mudanas.
+
+65
+00:05:47,150 --> 00:05:51,200
+Armazenamos nossos exerccios aqui e
+
+66
+00:05:51,290 --> 00:06:00,950
+inicializamos a busca de exerccios com essa chamada no novo modelo de treinamento.
+
+67
+00:06:01,070 --> 00:06:02,480
+Ns no precisamos mais do pipe sink agora porque o componente indice no tem cdigo assncrono.
+
+68
+00:06:02,570 --> 00:06:07,760
+Acabamos de receber uma srie de exerccios e nada mais.
+
+69
+00:06:07,760 --> 00:06:10,940
+Se salvarmos isso e voltarmos a travar, voc
+
+70
+00:06:12,500 --> 00:06:16,070
+ainda ver esses valores aps um curto perodo de tempo.
+
+71
+00:06:20,830 --> 00:06:24,010
+Ento isso ainda est funcionando.
+
+72
+00:06:24,010 --> 00:06:25,400
+&nbsp;
+

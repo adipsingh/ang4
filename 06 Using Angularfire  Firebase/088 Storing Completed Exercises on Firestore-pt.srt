@@ -1,0 +1,196 @@
+1
+00:00:02,380 --> 00:00:08,380
+Ns trabalhamos muito no cdigo para obter os exerccios disponveis e foi uma tima prtica para
+
+2
+00:00:08,460 --> 00:00:11,340
+todo esse ngulo de fogo e coisa observvel.
+
+3
+00:00:11,400 --> 00:00:18,280
+Agora,  claro, nosso aplicativo no  apenas sobre como obter dados, mas tambm sobre como armazenar dados sempre
+
+4
+00:00:18,490 --> 00:00:20,680
+que conclumos ou cancelamos um exerccio.
+
+5
+00:00:20,710 --> 00:00:25,810
+Ns agora empurramos para a nossa matriz local de exerccios aqui.
+
+6
+00:00:25,810 --> 00:00:33,490
+Este exerccio no  os exerccios disponveis, mas os exerccios em geral e agora so bons, mas
+
+7
+00:00:33,820 --> 00:00:35,890
+localmente no  muito til.
+
+8
+00:00:35,890 --> 00:00:43,300
+Sempre que nos aprofundarmos, esses dados desaparecero, seria melhor armazen-los em uma loja de incndio e, claro, podemos
+
+9
+00:00:43,390 --> 00:00:44,130
+fazer isso.
+
+10
+00:00:44,140 --> 00:00:45,970
+No podemos apenas ler dados.
+
+11
+00:00:46,000 --> 00:00:48,330
+Ns tambm podemos armazenar dados obviamente.
+
+12
+00:00:48,340 --> 00:00:50,010
+Como  que isso funciona.
+
+13
+00:00:50,470 --> 00:00:59,960
+Vamos adicionar um novo mtodo ao servio de um mtodo privado aqui na parte inferior e eu vou dizer que ele adiciona dados ao
+
+14
+00:01:00,170 --> 00:01:04,540
+banco de dados para deixar claro o que est acontecendo aqui.
+
+15
+00:01:04,550 --> 00:01:08,960
+Eu quero conectar-se a incndios angulares para trabalhar e salvar meus dados para ele.
+
+16
+00:01:09,170 --> 00:01:12,940
+Ento, basicamente, desarme exerccio e exerccio completo.
+
+17
+00:01:13,040 --> 00:01:22,880
+Eu quero chamar este mtodo de modo a fazer isso eu vou aceitar um exerccio que deve ser armazenado, que deve seguir o
+
+18
+00:01:22,880 --> 00:01:25,920
+nosso modelo de exerccio como uma entrada.
+
+19
+00:01:26,360 --> 00:01:29,150
+E agora ele vai chamar esse mtodo aqui.
+
+20
+00:01:30,290 --> 00:01:42,490
+Ao chamar isso de adicionar dados ao banco de dados e esse objeto  um objeto de exerccio, o mesmo  cancelado como banco
+
+21
+00:01:42,580 --> 00:01:43,620
+de dados.
+
+22
+00:01:43,620 --> 00:01:46,610
+Este tambm  um objeto de exerccio vlido.
+
+23
+00:01:46,670 --> 00:01:54,100
+Agora, o cdigo com os exerccios em execuo, ento tudo bem. Eu quero manter isso e, agora, adicionar dados ao banco de dados. Eu
+
+24
+00:01:54,970 --> 00:01:57,550
+tambm vou entrar em contato com esse D-B.
+
+25
+00:01:57,550 --> 00:02:05,320
+Ento, para injetar esse ngulo ou fogo ou referncia e chegar a uma coleo que nem sequer criamos
+
+26
+00:02:05,320 --> 00:02:05,970
+ainda.
+
+27
+00:02:05,980 --> 00:02:11,530
+Se voc se conectar a uma coleo que ainda no existe, ela ser criada automaticamente para voc.
+
+28
+00:02:11,950 --> 00:02:13,780
+Ento esta  minha coleo.
+
+29
+00:02:13,780 --> 00:02:23,680
+Eu quero criar os exerccios acabados e isso incluir tanto isso completo e os cancelados.
+
+30
+00:02:23,680 --> 00:02:30,670
+Agora estou me conectando a esta coleo e vou chamar o mtodo add e armazenar meu exerccio assim
+
+31
+00:02:30,670 --> 00:02:31,180
+mesmo.
+
+32
+00:02:32,030 --> 00:02:35,940
+Agora isso realmente retorna como uma promessa.
+
+33
+00:02:36,990 --> 00:02:42,670
+Onde podemos lidar com o caso de sucesso com um Ben andando ou pegar qualquer flecha que possamos ter.
+
+34
+00:02:42,690 --> 00:02:46,680
+Deixarei como est e simplesmente verifique o banco de dados se ele for excedido.
+
+35
+00:02:46,890 --> 00:02:48,860
+Ento, vamos salvar isso
+
+36
+00:02:49,020 --> 00:02:50,790
+E vamos descobrir se funciona.
+
+37
+00:02:51,000 --> 00:02:58,020
+Vamos rapidamente fazer o login novamente e escolher um exerccio, uma vez que eles so carregados como crunches.
+
+38
+00:02:58,020 --> 00:03:02,160
+Comece isso e vamos parar.
+
+39
+00:03:02,430 --> 00:03:05,580
+Agora no recebemos um erro ou que, na minha opinio,  um bom sinal.
+
+40
+00:03:05,800 --> 00:03:11,400
+Ei, vamos olhar para o nosso console e vamos atualizar esta pgina.
+
+41
+00:03:11,400 --> 00:03:13,320
+Voc deveria ver uma nova coleo.
+
+42
+00:03:13,320 --> 00:03:19,560
+O exerccio finalizado  como eu disse que  criado na hora se voc tentar acess-lo e ele
+
+43
+00:03:19,560 --> 00:03:24,980
+ainda no existe, ento temos um documento e o documento da dvida  um exerccio.
+
+44
+00:03:24,980 --> 00:03:32,600
+Ns terminamos crunches com a idia do crunch assim como existe em um whaleboat exerccios e todos
+
+45
+00:03:32,600 --> 00:03:34,480
+os metadados que criamos.
+
+46
+00:03:34,740 --> 00:03:36,200
+Ento  bem legal.
+
+47
+00:03:36,390 --> 00:03:41,490
+ apenas uma linha de cdigo que armazena isso no banco de dados.
+
+48
+00:03:41,490 --> 00:03:49,890
+Agora, na prxima palestra, podemos realmente conectar nossa tabela de dados aos dados que acabamos de armazenar para tambm preencher a
+
+49
+00:03:49,950 --> 00:03:54,530
+tabela de dados com dados provenientes de nosso banco de dados.
+

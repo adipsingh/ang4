@@ -1,0 +1,188 @@
+1
+00:00:02,240 --> 00:00:04,920
+Es hora de reorganizar nuestro cdigo un poco ms.
+
+2
+00:00:05,180 --> 00:00:08,980
+Aprovechemos una caracterstica proporcionada por el ngulo de fuego.
+
+3
+00:00:08,990 --> 00:00:13,650
+Podemos escuchar cualquier cambio en nuestro estado de autenticacin.
+
+4
+00:00:13,760 --> 00:00:25,530
+As que hagmoslo y para hacerlo agreguemos un nuevo mtodo, llmelo en el de oyente.
+
+5
+00:00:25,610 --> 00:00:26,410
+Ah.
+
+6
+00:00:26,610 --> 00:00:32,970
+Todos los cuales tienen dos disparos angulares apagados y hay un objeto de estado desactivado.
+
+7
+00:00:32,970 --> 00:00:35,940
+Esto es realmente un observable al que podemos suscribirnos.
+
+8
+00:00:36,360 --> 00:00:40,650
+Y emitir un evento cuando el estado de la autenticacin Evergrey cambie.
+
+9
+00:00:40,650 --> 00:00:45,290
+Entonces cuando pasamos del crdito ofensivo al odio no ofendido o al revs.
+
+10
+00:00:45,570 --> 00:00:49,810
+Ahora all recibiremos un objeto de usuario.
+
+11
+00:00:49,920 --> 00:00:56,940
+Por lo tanto, eso es NULL si no estamos autenticados o si el usuario est actualmente bloqueado.
+
+12
+00:00:56,970 --> 00:01:02,040
+Entonces, lo que podemos hacer aqu es que podemos verificar si el usuario ser verdadero si el usuario est configurado.
+
+13
+00:01:02,040 --> 00:01:08,760
+Entonces, si estamos afiliados en este caso, podemos ejecutar el cdigo que actualmente tenemos en la
+
+14
+00:01:08,990 --> 00:01:12,670
+oficina con xito, as que tmalo y adelo aqu.
+
+15
+00:01:14,090 --> 00:01:20,880
+De lo contrario, en el otro caso quiero ejecutar el cdigo que tengo en la funcin de cerrar la sesin todo el cdigo.
+
+16
+00:01:20,940 --> 00:01:24,440
+Adems de esta lnea de firmas aqu.
+
+17
+00:01:24,600 --> 00:01:29,820
+As que aqu abuilding captar este cdigo y ponerlo en el caso else.
+
+18
+00:01:31,090 --> 00:01:38,170
+Entonces, si cambiamos a la indicada, redirigiremos y emitiremos un evento y todo el conjunto se
+
+19
+00:01:38,180 --> 00:01:39,720
+equipara a verdadero.
+
+20
+00:01:40,090 --> 00:01:45,640
+De lo contrario, cancelaremos las suscripciones imit y el evento nunca navegar a la pantalla de inicio
+
+21
+00:01:45,640 --> 00:01:48,690
+de sesin y dicho es autenticado a falso con pap.
+
+22
+00:01:48,760 --> 00:01:52,860
+Podemos deshacernos de l con xito y cerrar la sesin.
+
+23
+00:01:52,900 --> 00:02:01,720
+Tambin Schrank podemos eliminar D exitosamente. Llame con xito aqu y simplemente cancele el registro de algo o no haga nada
+
+24
+00:02:02,380 --> 00:02:04,710
+en absoluto si lo desea.
+
+25
+00:02:04,750 --> 00:02:06,860
+Por supuesto, puede ejecutar cualquier cdigo que necesite.
+
+26
+00:02:07,330 --> 00:02:14,590
+Y ahora solo tenemos que asegurarnos de que todo el que escucha se llama el mejor momento para llamarlo, por supuesto,
+
+27
+00:02:14,680 --> 00:02:16,770
+es cuando se inicia nuestra aplicacin.
+
+28
+00:02:17,050 --> 00:02:21,880
+As que vamos a nuestro componente de aplicacin para esto.
+
+29
+00:02:21,880 --> 00:02:29,430
+El costo es este el primer componente que se crea una instancia y permite simplemente implementar el
+
+30
+00:02:29,440 --> 00:02:37,660
+ao de interfaz activo que debe importar desde la corte angular y que, por supuesto, nos obliga a agregar
+
+31
+00:02:37,690 --> 00:02:38,930
+DNG en l.
+
+32
+00:02:39,080 --> 00:02:44,620
+Methot ahora en este mtodo que quera llamar a este mtodo en mi servicio de oficina.
+
+33
+00:02:44,770 --> 00:02:47,450
+Entonces, qu necesito para inyectar el servicio de oficina por supuesto.
+
+34
+00:02:47,800 --> 00:02:49,880
+As que te proporcionar o no proporcionar.
+
+35
+00:02:49,890 --> 00:02:56,020
+Se proporciona una aplicacin Marchal. Simplemente lo inyectar del servicio al referirme al tipo de servicio
+
+36
+00:02:56,020 --> 00:03:00,450
+de mi oficina que necesita importar aqu en la parte superior.
+
+37
+00:03:02,370 --> 00:03:10,220
+Y con esto inyectado aqu en Nueva Zelanda, todos se ponen en contacto con todos los servicios y llaman al mtodo Lisner.
+
+38
+00:03:10,230 --> 00:03:12,040
+Ahora vamos a guardar esto y probarlo.
+
+39
+00:03:12,300 --> 00:03:18,410
+En teora, ahora todava debera impedirse el acceso a la capacitacin, esto
+
+40
+00:03:21,090 --> 00:03:27,140
+falla y todava deberamos poder iniciar sesin y luego ser redirigido.
+
+41
+00:03:27,930 --> 00:03:38,460
+Aqu todava podemos comenzar nuestros ejercicios y posiblemente cancelarlos e ir a ejercicios pasados para ver
+
+42
+00:03:38,460 --> 00:03:47,780
+todos nuestros ejercicios que an podemos ordenar, podemos navegar por aqu y simplemente podemos
+
+43
+00:03:47,780 --> 00:03:55,420
+desconectarnos, en cuyo caso ya no podr visitar el entrenamiento que trabajos.
+
+44
+00:03:55,480 --> 00:04:04,940
+As que ahora mejoramos nuestra aplicacin al asegurarnos de tener un oyente global fuera del escenario en el servicio externo que se
+
+45
+00:04:04,940 --> 00:04:11,290
+inicializa cuando se inicia nuestra aplicacin y donde no hacemos todo lo que tenemos que
+
+46
+00:04:11,500 --> 00:04:14,540
+hacer para Medicaid o usuarios poco sofisticados.
+
+47
+00:04:14,620 --> 00:04:20,390
+Y con eso conseguimos toda la funcionalidad que hace que nuestra aplicacin sea realmente increble.
+

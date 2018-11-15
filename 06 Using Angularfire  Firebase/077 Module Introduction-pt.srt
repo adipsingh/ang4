@@ -1,0 +1,52 @@
+1
+00:00:02,530 --> 00:00:04,230
+O que eu posso fazer no prximo mdulo.
+
+2
+00:00:04,480 --> 00:00:11,230
+Assim, nos ltimos mdulos, passamos muito tempo trabalhando com material angular e esperamos que fique mais claro como voc trabalha
+
+3
+00:00:11,260 --> 00:00:17,170
+com ele e como ele funciona e como voc pode adicionar os componentes necessrios ao seu aplicativo
+
+4
+00:00:17,170 --> 00:00:17,790
+no aplicativo.
+
+5
+00:00:18,100 --> 00:00:24,560
+Agora vamos seguir em frente com nosso aplicativo aqui e de uma perspectiva de estilo eu estou muito feliz agora.
+
+6
+00:00:24,610 --> 00:00:31,930
+Sentimos falta de um back-end, mas estamos trabalhando apenas com dados fictcios que gerenciamos no aplicativo regular por
+
+7
+00:00:31,930 --> 00:00:33,220
+meio de servios.
+
+8
+00:00:33,220 --> 00:00:35,540
+No estamos armazenando nada em um servidor.
+
+9
+00:00:35,560 --> 00:00:38,540
+Ns no estamos buscando nada de um servidor.
+
+10
+00:00:38,620 --> 00:00:40,180
+Ento  hora de mudar isso.
+
+11
+00:00:40,270 --> 00:00:48,880
+E para isso eu usarei o firebase como back end e tambm o angular, que  um pacote de terceiros
+
+12
+00:00:48,880 --> 00:00:51,320
+como um conector para esse Bakhit.
+
+13
+00:00:51,340 --> 00:00:57,040
+Agora, antes de mergulharmos no fogo, vamos dar uma olhada no Firebase, que  o Firebase.
+

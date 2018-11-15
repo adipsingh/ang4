@@ -1,0 +1,52 @@
+1
+00:00:02,530 --> 00:00:04,230
+Qu puedo hacer el prximo mdulo.
+
+2
+00:00:04,480 --> 00:00:11,230
+Entonces, en los ltimos mdulos pasamos mucho tiempo trabajando con material angular y espero que sea ms claro cmo trabajas
+
+3
+00:00:11,260 --> 00:00:17,170
+con l y cmo funciona y cmo puedes agregar los componentes que necesitas en tu aplicacin a
+
+4
+00:00:17,170 --> 00:00:17,790
+tu aplicacin.
+
+5
+00:00:18,100 --> 00:00:24,560
+Ahora sigamos con nuestra aplicacin aqu y desde una perspectiva de diseo, estoy bastante contento en este momento.
+
+6
+00:00:24,610 --> 00:00:31,930
+Extraamos un back end aunque solo estamos trabajando con datos ficticios que administramos en la aplicacin regular a
+
+7
+00:00:31,930 --> 00:00:33,220
+travs de servicios.
+
+8
+00:00:33,220 --> 00:00:35,540
+No estamos almacenando nada en un servidor.
+
+9
+00:00:35,560 --> 00:00:38,540
+No estamos obteniendo nada de un servidor.
+
+10
+00:00:38,620 --> 00:00:40,180
+Entonces es hora de cambiar esto.
+
+11
+00:00:40,270 --> 00:00:48,880
+Y para esto usar firebase como back-end y angular disparado tambin, que es un paquete de terceros como
+
+12
+00:00:48,880 --> 00:00:51,320
+un conector para ese Bakhit.
+
+13
+00:00:51,340 --> 00:00:57,040
+Ahora antes de sumergirnos en el fuego de aler para echar un vistazo a firebase, qu es firebase?
+

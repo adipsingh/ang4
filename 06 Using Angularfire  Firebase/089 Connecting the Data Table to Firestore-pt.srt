@@ -1,0 +1,356 @@
+1
+00:00:02,350 --> 00:00:10,000
+Na ltima palestra, adicionamos uma nica linha para armazenar nossos dados em nosso banco de dados usando o fireborm firebase.
+
+2
+00:00:10,390 --> 00:00:17,200
+Agora,  claro, tambm queremos que os dados dessa coleo de exerccios acabados sejam exibidos em nossa
+
+3
+00:00:17,200 --> 00:00:18,420
+tabela de dados.
+
+4
+00:00:18,850 --> 00:00:22,180
+Agora  realmente muito simples fazer isso.
+
+5
+00:00:22,510 --> 00:00:30,020
+Nossa tabela de dados em treinamentos anteriores  conectada aos dados retornados por serem concludos ou cancelados.
+
+6
+00:00:30,040 --> 00:00:31,280
+Exercite aqui.
+
+7
+00:00:33,640 --> 00:00:40,570
+ claro que podemos definir dinamicamente a propriedade date up para que possamos atualiz-la sempre que
+
+8
+00:00:40,570 --> 00:00:43,220
+buscarmos novos dados de nosso back-end.
+
+9
+00:00:43,270 --> 00:00:50,790
+Ento, o que podemos fazer  voltar ao nosso servio de treinamento e, em seguida, temos o exerccio alterado
+
+10
+00:00:50,790 --> 00:00:55,820
+e o exerccio mudou, todos eles adicionam um terceiro assunto que est acabado.
+
+11
+00:00:55,870 --> 00:01:03,790
+O exerccio mudou, o que tambm nos d uma srie de exerccios, mas  claro que no
+
+12
+00:01:03,790 --> 00:01:11,700
+estamos falando sobre os exerccios equnimes, mas sobre esses exerccios l embaixo eu posso l para todos
+
+13
+00:01:11,940 --> 00:01:13,290
+os exerccios nomeados.
+
+14
+00:01:13,710 --> 00:01:21,360
+Ento, sempre que o DS mudar, eu quero admitir esse evento agora para garantir que sou informado sobre essas mudanas.
+
+15
+00:01:21,440 --> 00:01:28,370
+Antes de mais nada, tenho que criar uma assinatura usando o fogo do pescador, que ouve as alteraes na loja
+
+16
+00:01:28,410 --> 00:01:30,270
+do meu fogo no servidor.
+
+17
+00:01:30,570 --> 00:01:36,420
+Na verdade, j temos um mtodo para obter exerccios concludos ou cancelados e ir para nomear e buscar
+
+18
+00:01:36,420 --> 00:01:42,070
+completar os exerccios diretos cancelados para deixar bem claro que isso  para buscar dados de um servidor.
+
+19
+00:01:42,570 --> 00:01:48,900
+E, no ano passado, no retornarei nada, mas em vez disso, usarei minha chamada de coleta de banco
+
+20
+00:01:49,500 --> 00:01:57,150
+de dados aqui e entrarei em contato com os exerccios concludos, para que esta coleo armazenemos os dados e, em seguida, chame
+
+21
+00:01:57,150 --> 00:01:58,140
+alteraes de valor.
+
+22
+00:01:58,140 --> 00:02:04,350
+Agora isso nos fornece apenas uma matriz dos valores do documento sem a ideia do documento.
+
+23
+00:02:04,470 --> 00:02:09,290
+Mas no preciso adicionar o ID aqui, porque s temos acesso somente de leitura aqui.
+
+24
+00:02:09,330 --> 00:02:11,430
+Eu no preciso do ID para nada.
+
+25
+00:02:11,850 --> 00:02:21,810
+Ento, o seu valor muda  o que eu chamo e agora vou chamar de inscrever-se que eu vou ter uma srie de exerccios que eu posso adicionar um
+
+26
+00:02:22,220 --> 00:02:25,400
+tipo de rotao para ser muito claro sobre isso.
+
+27
+00:02:25,440 --> 00:02:32,180
+Vai ser uma srie de exerccios que eu recebo e quero fazer algo com essa
+
+28
+00:02:32,180 --> 00:02:33,300
+matriz nesta funo.
+
+29
+00:02:33,560 --> 00:02:39,670
+Eu poderia substituir este exerccio acabado por ele, por exemplo, que soa como um bom comeo.
+
+30
+00:02:40,010 --> 00:02:49,310
+Ento, digamos que os exerccios acabados sejam iguais aos exerccios, mas poderamos at pular este passo, porque a principal coisa
+
+31
+00:02:49,310 --> 00:02:55,600
+que eu quero fazer  que eu quero emitir um exerccio completo que mudou.
+
+32
+00:02:55,610 --> 00:03:03,460
+Quero ligar para o prximo ano e simplesmente passar os exerccios que recebo do servidor para quem estiver interessado.
+
+33
+00:03:03,710 --> 00:03:06,050
+Ento no consigo me livrar dessa linha aqui.
+
+34
+00:03:06,170 --> 00:03:11,480
+E isso tambm significa que posso me livrar dos exerccios prontos aqui.
+
+35
+00:03:12,470 --> 00:03:20,030
+No s estou adicionando um valor sempre que recebo novos exerccios acabados do servidor e
+
+36
+00:03:20,030 --> 00:03:25,950
+iniciamos nosso ouvinte aqui quando chamamos de exerccios concludos ou cancelados.
+
+37
+00:03:25,950 --> 00:03:33,420
+Agora este ouvinte ou este mtodo aqui  chamado de aquecedor de treinamentos passados e at agora eu armazenei
+
+38
+00:03:33,420 --> 00:03:36,770
+o resultado como dados da minha tabela de dados.
+
+39
+00:03:36,800 --> 00:03:43,470
+Isso no funcionar mais, porque o recm-nomeado fecche completou ou cancelou o exerccio Meffert
+
+40
+00:03:43,770 --> 00:03:45,600
+no retorna os valores.
+
+41
+00:03:45,600 --> 00:03:50,130
+Em vez disso, agora simplesmente emitimos um evento sempre que desvalorizaes mudam.
+
+42
+00:03:50,130 --> 00:03:52,820
+Ento  esse assunto que eu deveria assinar.
+
+43
+00:03:52,830 --> 00:03:58,790
+Ento, em treinamentos anteriores, vou realmente usar esse assunto e criar uma assinatura.
+
+44
+00:03:58,790 --> 00:04:04,930
+Aqui na Nova Zelndia e dentro eu usarei o servio de treinamento para os exerccios finalizados.
+
+45
+00:04:04,930 --> 00:04:07,930
+Assunto alterado e inscreva-se.
+
+46
+00:04:08,560 --> 00:04:13,740
+E aqui eu vou realmente fazer meus exerccios.
+
+47
+00:04:13,890 --> 00:04:23,110
+Matrizes do tipo array de exerccios que agora posso designar como uma fonte de dados, para que os dados da fonte
+
+48
+00:04:23,110 --> 00:04:26,750
+de dados sejam agora simplesmente exercitados dessa forma.
+
+49
+00:04:26,810 --> 00:04:31,120
+Agora, claro, devemos tambm cancelar a inscrio se este componente for destrudo.
+
+50
+00:04:31,230 --> 00:04:36,750
+Ento XDR undestroyed interface e import-lo no ncleo angular.
+
+51
+00:04:36,770 --> 00:04:43,960
+Isso  super importante para evitar vazamentos de memria e, portanto, tambm adicionar minha energia para destru-lo.
+
+52
+00:04:43,980 --> 00:04:51,410
+Lisner ou mtodo devo dizer e preciso armazen-lo esta assinatura em uma propriedade de assinatura.
+
+53
+00:04:51,510 --> 00:04:57,760
+Ento, faa uma assinatura de importao do nosso x Jay SNL.
+
+54
+00:04:57,830 --> 00:05:02,380
+Agora, com isso importante, posso criar uma nova propriedade aqui.
+
+55
+00:05:02,700 --> 00:05:08,000
+Os maus atos anteriores alteraram a assinatura, qualquer que seja o nome que voc desejar.
+
+56
+00:05:08,040 --> 00:05:09,870
+ de assinatura de tipo.
+
+57
+00:05:10,670 --> 00:05:17,700
+E eu vou definir a minha assinatura que eu configurei aqui no NC nele igual a essa propriedade recm-criada.
+
+58
+00:05:17,720 --> 00:05:24,890
+Assim, a assinatura trocada e cancelar a inscrio para que ou a partir de sua assinatura no
+
+59
+00:05:24,890 --> 00:05:25,610
+Destroy assim.
+
+60
+00:05:25,970 --> 00:05:32,660
+Portanto, agora isso  limpo e evitamos vazamentos de memria e, agora, nossa tabela de dados deve ser atualizada
+
+61
+00:05:32,660 --> 00:05:35,310
+sempre que os dados no servidor forem atualizados.
+
+62
+00:05:35,360 --> 00:05:36,280
+Vamos dar uma olhada.
+
+63
+00:05:36,320 --> 00:05:41,730
+Vamos voltar ao nosso aplicativo e fazer o login.
+
+64
+00:05:41,880 --> 00:05:48,630
+E vamos rapidamente para os exerccios anteriores e comeamos com um valor que faz
+
+65
+00:05:48,630 --> 00:05:52,340
+sentido porque temos um valor armazenado na coleo.
+
+66
+00:05:52,350 --> 00:06:01,940
+E se eu fosse deletar esse valor clicando nos pontos livres, o seu documento de deletar Sim comea a deletar.
+
+67
+00:06:01,950 --> 00:06:07,830
+Voc ver que no rastreador de fitness ele tambm foi excludo.
+
+68
+00:06:08,400 --> 00:06:14,940
+Agora, se eu comear um novo exerccio aqui, talvez este e eu parei com isso.
+
+69
+00:06:15,130 --> 00:06:17,290
+E vamos completar alguns Burpy.
+
+70
+00:06:17,330 --> 00:06:19,760
+Ento eu vou esperar que isso termine.
+
+71
+00:06:20,200 --> 00:06:23,440
+Est quase pronto agora est feito.
+
+72
+00:06:23,440 --> 00:06:27,430
+Se eu for aos exerccios anteriores, temos que nos exercitar novamente.
+
+73
+00:06:27,520 --> 00:06:28,350
+No seja enganado.
+
+74
+00:06:28,360 --> 00:06:29,960
+Ns temos exerccios.
+
+75
+00:06:30,100 --> 00:06:32,810
+Acabamos de configurar o Nations das pginas para mostrar apenas uma por pgina.
+
+76
+00:06:32,830 --> 00:06:40,990
+Mas o que mudou a mudana ns vemos ambos os exerccios e podemos,  claro, ordenar e filtrar tambm.
+
+77
+00:06:40,990 --> 00:06:42,640
+Ento, isso ainda funciona.
+
+78
+00:06:42,760 --> 00:06:50,050
+O mais legal  que se eu abrir agora e abrir outra janela do navegador ao lado, deixe-me
+
+79
+00:06:50,050 --> 00:06:51,130
+fazer isso rapidamente.
+
+80
+00:06:51,130 --> 00:06:53,940
+Agora eu ainda estou logado  esquerda e  direita.
+
+81
+00:06:53,950 --> 00:06:59,620
+Eu iniciei uma nova instncia deste aplicativo em execuo no mesmo servidor e, em seguida, efetuei login para ver o
+
+82
+00:06:59,620 --> 00:07:03,510
+mesmo exerccio, porque os compartilhamos em contas que no so vinculadas a usurios.
+
+83
+00:07:03,820 --> 00:07:11,070
+Ento, agora, se Por que ir l e comear alguns crunches e eu cancel-los.
+
+84
+00:07:11,110 --> 00:07:17,420
+Voc os v aqui em cima  esquerda assim ns adquirimos uma atualizao ao vivo acontecendo aqui devido a nosso
+
+85
+00:07:17,440 --> 00:07:19,970
+fogo de Wrangler de subscrio baseado observvel dinmico.
+
+86
+00:07:20,020 --> 00:07:23,320
+E isso mostra o poder total do ngulo de fogo.
+
+87
+00:07:23,350 --> 00:07:24,810
+Ainda no terminamos.
+
+88
+00:07:24,820 --> 00:07:27,420
+Ns trabalhamos muito com a histria do ngulo de fogo.
+
+89
+00:07:27,550 --> 00:07:33,280
+Mas h mais que podemos explorar l e nem sequer tocamos em autenticao, vamos fazer tudo isso.
+

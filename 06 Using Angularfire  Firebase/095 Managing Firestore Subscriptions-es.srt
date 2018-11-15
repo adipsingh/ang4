@@ -1,0 +1,248 @@
+1
+00:00:02,200 --> 00:00:08,350
+Entonces, en las ltimas conferencias analizamos cmo implementamos la autenticacin y protegemos nuestro Bakan.
+
+2
+00:00:08,350 --> 00:00:11,250
+Todo funciona bien siempre que iniciemos sesin.
+
+3
+00:00:11,260 --> 00:00:13,760
+Entonces podemos enviar nuestras solicitudes.
+
+4
+00:00:13,780 --> 00:00:17,910
+Y, por supuesto, buscamos todos los tamaos adicionales disponibles si finalizamos la sesin.
+
+5
+00:00:17,930 --> 00:00:19,730
+Todo funciona de la misma manera.
+
+6
+00:00:19,900 --> 00:00:24,070
+Pero luego recibimos el error de que no somos autnticamente odiados y eso es cierto.
+
+7
+00:00:24,140 --> 00:00:32,950
+El problema es que obtenemos este error porque nuestras suscripciones a la tienda de bomberos y el servicio de capacitacin an
+
+8
+00:00:33,010 --> 00:00:34,000
+estn activos.
+
+9
+00:00:34,060 --> 00:00:39,730
+Incluso si llegamos a este punto y el servicio de capacitacin obtuvimos suscripciones para todo tipo de
+
+10
+00:00:39,730 --> 00:00:42,420
+cosas, por ejemplo, para engordar los ejercicios disponibles.
+
+11
+00:00:42,670 --> 00:00:45,220
+Y esta es, por supuesto, una suscripcin de por vida.
+
+12
+00:00:45,310 --> 00:00:54,940
+No termina solo porque lo bloqueamos, as que podemos hacer un par de cosas para solucionar este problema o trabajar con
+
+13
+00:00:54,940 --> 00:00:55,610
+l.
+
+14
+00:00:55,840 --> 00:01:02,800
+Una cosa que podemos hacer, que debemos hacer de todos modos, es adems de este primer mtodo que pasamos para
+
+15
+00:01:02,800 --> 00:01:05,400
+ejercer esta primera funcin donde manejamos los datos.
+
+16
+00:01:05,590 --> 00:01:09,660
+No podemos pasar una segunda funcin donde manejamos los errores.
+
+17
+00:01:09,940 --> 00:01:22,460
+As que, por ahora, djenme simplemente emitir ese error aqu y ahora si volvemos y cerramos la bolsa y la
+
+18
+00:01:23,440 --> 00:01:24,460
+cerramos, cambi.
+
+19
+00:01:24,460 --> 00:01:30,910
+Seguimos obteniendo el error impreso aqu, pero ahora lo manejamos nosotros mismos, por eso es por eso que no vemos
+
+20
+00:01:30,910 --> 00:01:32,500
+ese mensaje de error rojo.
+
+21
+00:01:32,500 --> 00:01:34,640
+Este viene por nuestra segunda suscripcin.
+
+22
+00:01:34,720 --> 00:01:37,560
+El primero simplemente est bloqueado aqu.
+
+23
+00:01:38,080 --> 00:01:44,710
+Si comentamos esto y no hacemos nada con esto, trat de volver a decir que ahora solo recibimos el mensaje
+
+24
+00:01:48,450 --> 00:01:52,340
+de error de Dobry y no vemos nada sobre el error.
+
+25
+00:01:52,350 --> 00:02:02,510
+Entonces, si l copi ese patrn y va a nuestra segunda suscripcin que est aqu abajo, agregamos el
+
+26
+00:02:02,510 --> 00:02:04,380
+mismo patrn aqu.
+
+27
+00:02:04,480 --> 00:02:11,310
+Ahora si nos conectamos en una hora ya no deberamos ver ningn error.
+
+28
+00:02:11,650 --> 00:02:16,770
+Ahora bien, se podra decir claramente que es una mala solucin porque los errores ocurren, simplemente los ocultamos.
+
+29
+00:02:17,040 --> 00:02:23,230
+Pero en realidad podra estar bien si dices siempre que erro Chris aqu, no quiero hacer nada.
+
+30
+00:02:23,400 --> 00:02:25,830
+Bueno, este es un acercamiento a Hightstown.
+
+31
+00:02:26,070 --> 00:02:32,040
+Por supuesto, aqu tienes un problema si obtienes algn error de Obert que quieras mostrarle
+
+32
+00:02:32,040 --> 00:02:34,500
+al usuario. Bueno, simplemente lo ocultas.
+
+33
+00:02:34,500 --> 00:02:34,710
+Derecha.
+
+34
+00:02:34,710 --> 00:02:37,970
+Entonces aqu no podemos manejar esto.
+
+35
+00:02:38,010 --> 00:02:44,670
+Entonces, un enfoque alternativo sera cancelar nuestras suscripciones, eliminemos nuestros controladores areos, que an puede
+
+36
+00:02:44,670 --> 00:02:48,460
+recordar si desea implementar sus propios manejadores de errores.
+
+37
+00:02:48,870 --> 00:02:52,290
+Y ahora almacenemos las suscripciones que tenemos aqu.
+
+38
+00:02:52,380 --> 00:02:58,830
+Entonces todo en suscripcin de palabra de nuestro ex jefe.
+
+39
+00:02:58,830 --> 00:03:09,420
+S y crear una nueva propiedad privada que todos nombre FHB SERPS para suscripciones de firebase que ser
+
+40
+00:03:09,420 --> 00:03:11,520
+una matriz de suscripciones.
+
+41
+00:03:11,520 --> 00:03:15,930
+En realidad inicialmente es una matriz vaca.
+
+42
+00:03:16,410 --> 00:03:24,330
+Pero aqu voy a llegar a mi sustrato de firebase y a Porsche.
+
+43
+00:03:24,820 --> 00:03:29,890
+Esta primera suscripcin, as que solo lo agregar, se suscribir.
+
+44
+00:03:29,890 --> 00:03:35,980
+Simplemente agregar esa suscripcin a la tarifa de suscripcin de Firebase y har lo
+
+45
+00:03:36,520 --> 00:03:43,930
+mismo all para buscar ejercicios completados o cancelados o para llegar a los preceptos de la FBA
+
+46
+00:03:43,930 --> 00:03:53,730
+y empujar esta suscripcin al ahora o agregaremos un nuevo mtodo que hara las suscripciones de cancelacin de llamada no toman ningn
+
+47
+00:03:54,510 --> 00:03:58,570
+argumento, sino que simplemente toman suscripciones de Bayat.
+
+48
+00:04:00,670 --> 00:04:07,210
+Y con cuatro cada uno puedo ejecutar algn cdigo en cada suscripcin en ese estado irracional y por cada
+
+49
+00:04:07,210 --> 00:04:14,680
+suscripcin que simplemente quiera cancelar la suscripcin ahora solo tengo que llamar para cancelar las suscripciones desde el servicio fuera de
+
+50
+00:04:16,070 --> 00:04:18,810
+lnea, as que ir a mi servicio tcnico.
+
+51
+00:04:18,810 --> 00:04:19,710
+Ya tiene.
+
+52
+00:04:19,740 --> 00:04:21,010
+Agregue inyectable.
+
+53
+00:04:21,180 --> 00:04:33,860
+As que ahora puedo inyectar mi servicio promedio aqu, un servicio de capacitacin privado como este, y cuando salgamos
+
+54
+00:04:33,860 --> 00:04:42,700
+de la sesin quiero llamar a este servicio de capacitacin para cancelar las suscripciones.
+
+55
+00:04:43,230 --> 00:04:47,520
+Ahora guarde esto y recuerde que elimin los manejadores de errores.
+
+56
+00:04:47,520 --> 00:04:55,380
+Todava no deberamos recibir mensajes de error porque al cerrar la sesin ahora cancelamos la suscripcin y, por lo tanto, lo hacemos antes
+
+57
+00:04:55,380 --> 00:05:01,740
+de intentar hacer una solicitud para realizar una solicitud al back-end posterior que no se llevara a cabo.
+
+58
+00:05:01,830 --> 00:05:05,040
+Entonces esta es tambin una estrategia vlida aqu.
+
+59
+00:05:06,850 --> 00:05:14,650
+Ahora hay otra cosa que podemos hacer ahora para hacer un trabajo de limpieza y eso cambia la forma en
+
+60
+00:05:14,690 --> 00:05:20,640
+que emitimos el evento afectado, lo que leemos ahora al cerrar y cerrar con xito.
+
+61
+00:05:20,650 --> 00:05:27,600
+Permtame mostrarle cmo puede aprovechar un observador basado en el estado observable proporcionado por el ngulo de
+
+62
+00:05:27,600 --> 00:05:29,740
+fuego en la prxima conferencia.
+

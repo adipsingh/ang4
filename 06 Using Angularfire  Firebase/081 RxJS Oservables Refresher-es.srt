@@ -1,0 +1,384 @@
+1
+00:00:02,260 --> 00:00:04,180
+De acuerdo, entonces es hora de un poco de teora.
+
+2
+00:00:04,240 --> 00:00:09,720
+Vamos a usar fuego angular en este mdulo y fuego angular usar observables.
+
+3
+00:00:09,730 --> 00:00:12,600
+Ese es su activo principal si lo desea.
+
+4
+00:00:12,620 --> 00:00:17,290
+Por lo tanto, necesitamos entender qu son realmente observables del servicio y las suscripciones y cmo
+
+5
+00:00:17,320 --> 00:00:18,360
+funciona todo eso.
+
+6
+00:00:18,700 --> 00:00:21,090
+Entonces obtenemos un observable y un observador.
+
+7
+00:00:21,100 --> 00:00:22,920
+Estos son trminos que a menudo escuchas.
+
+8
+00:00:23,020 --> 00:00:25,210
+Los dos estn conectados con una suscripcin.
+
+9
+00:00:25,390 --> 00:00:31,930
+Y si usas angular, usas este constructo en realidad un proyecto de un curso de una hora, ya
+
+10
+00:00:31,930 --> 00:00:38,380
+usamos un sujeto que es un tipo especial de absorbible; podras decir que podramos usar ese sujeto para
+
+11
+00:00:38,380 --> 00:00:43,200
+emitir valores llamando al siguiente mtodo en que podramos suscribirlo. mtodo de suscripcin.
+
+12
+00:00:43,450 --> 00:00:48,910
+Ahora, en contraste con un cheque y absorbible, sera algo a lo que puede llamar a continuacin,
+
+13
+00:00:48,910 --> 00:00:54,110
+donde puede suscribirse y absorberse, que emite eventos en funcin de alguna otra fuente que envuelve.
+
+14
+00:00:54,160 --> 00:01:00,040
+Por ejemplo, podra ajustar ese evento de botn de aviso con un observable y recibir un nuevo evento
+
+15
+00:01:00,220 --> 00:01:06,160
+emitido que se entregar a su suscripcin cada vez que se haga clic en un botn en su ncleo.
+
+16
+00:01:06,190 --> 00:01:12,430
+Todos los observables tienen mtodos gratuitos que pueden activarse por la fuente que envuelven o en el
+
+17
+00:01:12,430 --> 00:01:13,710
+caso del sujeto.
+
+18
+00:01:13,770 --> 00:01:20,710
+Tal vez usted programticamente y luego Meffert un error o mtodo y un mtodo completo porque los observables
+
+19
+00:01:20,890 --> 00:01:27,850
+pueden emitir un nuevo valor puede fallar o puede completar y no emitir ms valores en todos estos casos.
+
+20
+00:01:27,910 --> 00:01:30,550
+Estos mtodos simplemente se desencadenan o invocan.
+
+21
+00:01:30,580 --> 00:01:37,770
+Podras decir ahora como dije que la NASA simplemente envolver algo, por ejemplo, di el ejemplo del botn
+
+22
+00:01:37,770 --> 00:01:38,040
+aqu.
+
+23
+00:01:38,060 --> 00:01:45,030
+Nmero uno podra cancelar la devolucin de una solicitud H2B que podra tener xito y, por lo tanto, ejecutarse a
+
+24
+00:01:45,070 --> 00:01:51,700
+continuacin y proporcionarle la respuesta y tambin ejecutarla completa porque una vez que HTP solicita A-stan no se esperan
+
+25
+00:01:51,730 --> 00:01:56,930
+valores adicionales para fuentes de eventos diferentes como por ejemplo el bastn que envuelves
+
+26
+00:01:57,040 --> 00:02:02,380
+Esto podra ser diferente porque la lechera podra obtener absolutamente ms eventos en el futuro.
+
+27
+00:02:02,380 --> 00:02:04,470
+No sabes cmo se hace clic en el botn.
+
+28
+00:02:04,720 --> 00:02:10,400
+Por supuesto, si vuelve al ejemplo de solicitud HTP que tambin podra fallar, en cuyo caso tambin llamara
+
+29
+00:02:10,420 --> 00:02:11,500
+al mtodo Aero.
+
+30
+00:02:11,590 --> 00:02:14,900
+Y esto en realidad todo se completar o ser preciso.
+
+31
+00:02:14,950 --> 00:02:16,200
+Cancele lo observable
+
+32
+00:02:16,240 --> 00:02:22,590
+Entonces, si ocurre un error, todos ustedes no obtendrn respuestas o eventos adicionales para ser precisos.
+
+33
+00:02:22,900 --> 00:02:24,350
+Entonces este es un observable.
+
+34
+00:02:24,610 --> 00:02:30,490
+Podemos pensar en estos observables como flujos de datos.
+
+35
+00:02:30,490 --> 00:02:33,420
+Entonces un raps observable tal flujo de datos.
+
+36
+00:02:33,730 --> 00:02:35,980
+Se trata de trabajos asincrnicos.
+
+37
+00:02:35,980 --> 00:02:40,660
+Al final, aunque tericamente, tambin puedes usar flujos de datos sncronos.
+
+38
+00:02:40,660 --> 00:02:45,080
+As que aqu est el ejemplo concreto que obtuvimos un valor enviado.
+
+39
+00:02:45,190 --> 00:02:47,500
+Volvamos al ejemplo de HTP.
+
+40
+00:02:47,530 --> 00:02:49,810
+Enviamos la solicitud y lleg una respuesta.
+
+41
+00:02:49,810 --> 00:02:54,180
+Esto podra ser valioso o estamos envolviendo un oyente de evento de botn.
+
+42
+00:02:54,190 --> 00:02:55,430
+Ahora se hizo clic en el botn.
+
+43
+00:02:55,480 --> 00:02:56,890
+Obtenemos un nuevo valor.
+
+44
+00:02:56,950 --> 00:02:59,570
+El objeto con datos de eventos.
+
+45
+00:03:00,010 --> 00:03:03,960
+Ahora el observador tiene un par de mtodos que se pueden activar.
+
+46
+00:03:04,120 --> 00:03:06,130
+Y por de-valor obtenemos esto.
+
+47
+00:03:06,160 --> 00:03:08,920
+Digamos que es un valor exitoso un evento exitoso.
+
+48
+00:03:08,920 --> 00:03:09,660
+No hay error.
+
+49
+00:03:09,760 --> 00:03:12,340
+Por lo tanto, se activa el siguiente mtodo.
+
+50
+00:03:12,340 --> 00:03:18,130
+Ahora podemos obtener ms valores para algunos observables. Abourezk solo podra emitir uno como la solicitud
+
+51
+00:03:18,130 --> 00:03:21,820
+HTP y digamos que todos estos valores tienen xito sin errores.
+
+52
+00:03:21,820 --> 00:03:25,240
+Entonces el siguiente se ejecuta un par de veces en el Observer.
+
+53
+00:03:25,300 --> 00:03:27,960
+Ahora a veces se puede completar tonsorial.
+
+54
+00:03:28,030 --> 00:03:30,430
+Entonces el mtodo completo se activa.
+
+55
+00:03:30,430 --> 00:03:33,910
+Ahora otro absorbible podra tener un flujo de datos diferente.
+
+56
+00:03:33,940 --> 00:03:39,350
+Aunque algunos valores son exitosos, puede ser un error que ejecuta el mtodo de error.
+
+57
+00:03:39,350 --> 00:03:40,690
+El final nunca se alcanza.
+
+58
+00:03:40,690 --> 00:03:42,250
+En este caso.
+
+59
+00:03:42,360 --> 00:03:47,620
+Entonces estos son observables y esto es por supuesto altamente abstracto y terico.
+
+60
+00:03:47,740 --> 00:03:49,630
+Lo veremos en accin en un segundo.
+
+61
+00:03:49,630 --> 00:03:50,390
+Sin preocupaciones.
+
+62
+00:03:50,490 --> 00:03:55,630
+Y si quiere aprender an ms con una gran cantidad de ejemplos prcticos, me vuelvo serio en
+
+63
+00:03:55,630 --> 00:04:00,010
+mi canal de YouTube, que tambin puede encontrar un enlace al final de este mdulo.
+
+64
+00:04:00,040 --> 00:04:03,740
+As que aqu hay otra cosa que es realmente genial sobre Horrible's.
+
+65
+00:04:03,820 --> 00:04:08,710
+Obtenemos lo observable, y el observador y el observador recuerdan que simplemente conecta el observable a
+
+66
+00:04:08,710 --> 00:04:12,470
+travs de una suscripcin para que se informe sobre todos estos valores.
+
+67
+00:04:12,490 --> 00:04:14,800
+Errores o terminaciones.
+
+68
+00:04:14,800 --> 00:04:20,080
+Sin embargo, lo mejor de los observables es que puedes usar operadores.
+
+69
+00:04:20,080 --> 00:04:29,470
+Los operadores son simplemente algunos mtodos que pone entre la emisin del evento en su flujo de datos y su
+
+70
+00:04:29,560 --> 00:04:30,200
+observador.
+
+71
+00:04:30,250 --> 00:04:30,870
+As que dnde ests.
+
+72
+00:04:30,870 --> 00:04:33,270
+Entonces haz algo con los datos.
+
+73
+00:04:33,280 --> 00:04:35,620
+Un operador podra ser el operador del mapa.
+
+74
+00:04:35,780 --> 00:04:43,090
+Los ex-jefes son los que en realidad biblioteca ISDE que nos da toda esta funcionalidad absorbible tiene
+
+75
+00:04:43,210 --> 00:04:49,420
+toneladas y toneladas y toneladas de operadores y veremos algunos de ellos en este mdulo.
+
+76
+00:04:49,420 --> 00:04:52,600
+Una vez ms para ms operadores echa un vistazo a YouTube en serio.
+
+77
+00:04:52,600 --> 00:04:54,180
+Estaba mencionando.
+
+78
+00:04:54,290 --> 00:05:00,870
+Entonces, llegamos a los operadores, qu hacen los operadores mientras se estn ejecutando antes de que realmente recibamos el valor?
+
+79
+00:05:00,880 --> 00:05:01,780
+Nuestro observador
+
+80
+00:05:01,780 --> 00:05:04,390
+Pero despus de que el valor fue emitido.
+
+81
+00:05:04,750 --> 00:05:09,590
+Entonces todos los valores van a un operador y luego dependiendo del operador.
+
+82
+00:05:09,730 --> 00:05:11,060
+Algo les sucede a ellos.
+
+83
+00:05:11,170 --> 00:05:17,380
+El operador de mapa, por ejemplo, nos permite especificar una funcin que se ejecuta en cada valor que podemos
+
+84
+00:05:17,380 --> 00:05:19,110
+usar para transformar el valor.
+
+85
+00:05:19,300 --> 00:05:25,630
+Me gusta el mtodo de mapa en los marcos de JavaScript, por lo que obtenemos valores transformados en ese caso.
+
+86
+00:05:25,720 --> 00:05:29,350
+Y DS transform los valores en dedi alcanzados por el observador.
+
+87
+00:05:29,350 --> 00:05:36,220
+Lo mejor de todo es que podemos encadenar operadores y, por lo tanto, puedes reconstruir cadenas complejas de operaciones de
+
+88
+00:05:36,220 --> 00:05:39,990
+manejo de valores en las que puedes transformar primero los datos.
+
+89
+00:05:40,120 --> 00:05:47,350
+Luego, incluso estrangulas la coleccin de ellos para que solo recibas un valor cada dos segundos y este ejemplo tuyo
+
+90
+00:05:47,350 --> 00:05:54,310
+y cosas por el estilo hacen lo que puedes hacer con los operadores y esta es una de las
+
+91
+00:05:54,310 --> 00:05:55,990
+partes ms interesantes sobre observables.
+
+92
+00:05:56,020 --> 00:06:01,880
+Los muchos operadores que puede usar para transformar los datos manipulan los datos, etc.
+
+93
+00:06:01,930 --> 00:06:08,260
+Todava podra imaginar que esto es altamente terico. Por qu no nos sumergimos y lo dudamos?
+
+94
+00:06:08,260 --> 00:06:13,660
+Al menos tiene una comprensin bsica de lo que es observable y de qu se trata.
+
+95
+00:06:13,870 --> 00:06:19,660
+Usemos el fuego angular, que abarca todo este concepto, pero que tambin hace que sea ms
+
+96
+00:06:19,660 --> 00:06:22,350
+fcil de entender, ya que engendraron ejemplos reales.
+

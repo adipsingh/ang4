@@ -1,0 +1,104 @@
+1
+00:00:02,220 --> 00:00:03,890
+Qu hace el ngulo de fuego?
+
+2
+00:00:04,380 --> 00:00:11,230
+Si tenemos una base de fuego nuestra aplicacin angular, el fuego angular acta como un puente entre estas dos cosas.
+
+3
+00:00:11,460 --> 00:00:16,890
+En realidad, tenemos, por supuesto, ms opciones que solo usar el ngulo de fuego, ya que pap es
+
+4
+00:00:16,890 --> 00:00:21,290
+un paquete que no est disponible por el equipo de Firebase pero compra nuestros desarrolladores.
+
+5
+00:00:21,510 --> 00:00:25,800
+Por lo tanto, no es la solucin oficial, pero por supuesto una muy buena para usar.
+
+6
+00:00:25,890 --> 00:00:29,470
+Solo enfatizo esto para enfatizar que tienes alternativas.
+
+7
+00:00:29,610 --> 00:00:31,790
+No puedes, por ejemplo, usar varios descansos.
+
+8
+00:00:31,800 --> 00:00:38,820
+API es proporcionada por firebase does le permite usar la H angular para el cliente para conectarse a los datos de recuperacin de datos
+
+9
+00:00:38,910 --> 00:00:42,780
+de la tienda de Firebase. Los usuarios de autenticacin hacen todas estas cosas.
+
+10
+00:00:42,930 --> 00:00:48,930
+Si ha pasado por mi curso de gua completa angular, ha visto la API de detencin en accin para la base
+
+11
+00:00:48,930 --> 00:00:50,430
+de datos en tiempo real.
+
+12
+00:00:50,700 --> 00:00:52,940
+Y no usaremos eso en este curso.
+
+13
+00:00:52,980 --> 00:00:59,070
+Tambin podemos usar el SDK oficial de firebase, que es un paquete de Javascript que podemos usar en cualquier
+
+14
+00:00:59,070 --> 00:01:02,960
+proyecto de javascript y, por supuesto, tambin es cierto para proyectos angulares.
+
+15
+00:01:03,020 --> 00:01:10,080
+De nuevo, si ha pasado de mi curso de gua completo, vio DSK en accin all, lo usamos para el
+
+16
+00:01:10,080 --> 00:01:15,920
+mdulo de autenticacin, pero tampoco lo usar y lo disuadir. En su lugar, usaremos fuego angular.
+
+17
+00:01:15,930 --> 00:01:21,830
+Un paquete de terceros que en realidad tambin nos proporciona todas las caractersticas son muchas de las funciones
+
+18
+00:01:21,840 --> 00:01:24,200
+que STK nos ofrece el SDK oficial.
+
+19
+00:01:24,360 --> 00:01:30,160
+Pero de una manera que abarca observables y se integra bien en angular.
+
+20
+00:01:30,630 --> 00:01:36,450
+Solo puedes usarlo en anular que es importante que no puedas usarlo en otros frameworks
+
+21
+00:01:36,540 --> 00:01:43,200
+pero all se integra muy bien y hace que usar Firebase sea un receso, vers que la parte
+
+22
+00:01:43,200 --> 00:01:50,880
+importante realmente es esa naturaleza observable que est absolutamente en lnea con La estrategia de todos los pescadores es usar
+
+23
+00:01:50,880 --> 00:01:53,050
+wolds observables siempre que sea posible.
+
+24
+00:01:53,460 --> 00:01:59,770
+Ahora, para eso, por supuesto, necesitamos entender qu son realmente observables, suscripciones y dems.
+
+25
+00:01:59,790 --> 00:02:04,020
+Eso es algo que analizar en la prxima conferencia si sabes todo sobre eso.
+
+26
+00:02:04,020 --> 00:02:06,170
+Sintase libre de saltarse esa conferencia, por supuesto.
+

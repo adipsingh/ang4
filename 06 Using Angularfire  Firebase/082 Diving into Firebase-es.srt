@@ -1,0 +1,444 @@
+1
+00:00:02,250 --> 00:00:09,330
+Get zone the last lecture Expliqu cmo funcionan los observables de una manera muy condensada, simplemente valo
+
+2
+00:00:09,330 --> 00:00:10,010
+en accin.
+
+3
+00:00:10,010 --> 00:00:11,810
+Qu piensas sobre eso.
+
+4
+00:00:11,850 --> 00:00:14,970
+Para que lo veas en accin, antes que nada necesitas algunos datos.
+
+5
+00:00:14,970 --> 00:00:20,400
+As que volvamos a Firebase y vayamos a la seccin de la base de datos all.
+
+6
+00:00:20,430 --> 00:00:22,800
+Ahora puedes elegir entre dos bases de datos.
+
+7
+00:00:22,860 --> 00:00:26,070
+Los datos en tiempo real y la tienda de firers en la nube.
+
+8
+00:00:26,130 --> 00:00:28,790
+Todava est en beta en el momento de registrar esto.
+
+9
+00:00:28,800 --> 00:00:34,010
+Pero debe ser seguro de usar y es la siguiente base de datos de gen que ofrece Firebase.
+
+10
+00:00:34,200 --> 00:00:39,710
+Hagamos clic en probar incendios en la puerta y comencemos en el modo de prueba.
+
+11
+00:00:39,870 --> 00:00:40,890
+Ahora aqu importante.
+
+12
+00:00:40,890 --> 00:00:43,440
+Cualquiera puede leer o escribir su base de datos.
+
+13
+00:00:43,470 --> 00:00:46,850
+As que esto es realmente solo para nosotros ahora para comenzar rpidamente.
+
+14
+00:00:46,890 --> 00:00:53,580
+Posteriormente cambiaremos al modo de bloqueo para asegurarnos de que solo los usuarios de cable ofensivos puedan leer y escribir
+
+15
+00:00:53,580 --> 00:00:54,150
+los datos.
+
+16
+00:00:54,270 --> 00:00:56,690
+Por ahora, comencemos en modo de prueba aqu.
+
+17
+00:00:57,740 --> 00:01:04,220
+Esto ahora lo desearemos en la tienda de bomberos para nosotros y preparar todo para que podamos usarlo cuando todo
+
+18
+00:01:04,220 --> 00:01:05,050
+est preparado.
+
+19
+00:01:05,060 --> 00:01:07,820
+As es como se ve la tormenta de fuego en la nube.
+
+20
+00:01:07,820 --> 00:01:10,900
+Ahora, cmo funciona realmente la tormenta de nubes?
+
+21
+00:01:11,660 --> 00:01:16,850
+Los documentos oficiales son un excelente lugar para aprender ms, pero permtanme que lo guie a travs de
+
+22
+00:01:17,240 --> 00:01:22,670
+los conceptos bsicos y luego le mostraremos el ejemplo de los documentos porque son realmente geniales para comprender cmo
+
+23
+00:01:22,670 --> 00:01:23,840
+funciona la nube Firestar.
+
+24
+00:01:24,110 --> 00:01:26,250
+Y es un gran lugar para sumergirte ms profundo.
+
+25
+00:01:26,420 --> 00:01:34,340
+Por lo tanto, los clasificadores disparan tornados anormales al trabajar con colecciones de FireWorks que pueden ser comparadas con las
+
+26
+00:01:34,430 --> 00:01:40,430
+carpetas de los documentos de su sistema operativo que puede comparar con documentos de su
+
+27
+00:01:40,430 --> 00:01:46,520
+sistema operativo que estn organizados en carpetas o colecciones en este caso y datos. dentro
+
+28
+00:01:46,520 --> 00:01:47,870
+de un documento.
+
+29
+00:01:48,050 --> 00:01:51,490
+Ahora esa es una muy buena imagen para entender con qu estamos trabajando.
+
+30
+00:01:51,800 --> 00:01:58,220
+La idea de caer en la historia del fuego si almacena documentos y finaliza un documento podra
+
+31
+00:01:58,220 --> 00:02:03,320
+ser la informacin sobre un solo usuario que mltiples usuarios tendran varios documentos.
+
+32
+00:02:03,320 --> 00:02:06,350
+Ahora los documentos son parte de las colecciones.
+
+33
+00:02:06,350 --> 00:02:09,710
+Debe tener documentos en una coleccin de coleccin.
+
+34
+00:02:09,710 --> 00:02:11,500
+Recuerda que es solo una carpeta.
+
+35
+00:02:11,600 --> 00:02:17,390
+Entonces, en este ejemplo, tenemos una carpeta de usuario con dos documentos, dos usuarios.
+
+36
+00:02:17,390 --> 00:02:23,620
+Ahora tambin puede tener colecciones anidadas aunque no puede tener una coleccin dentro de una coleccin.
+
+37
+00:02:23,690 --> 00:02:25,700
+Pero como hijo de un documento.
+
+38
+00:02:26,000 --> 00:02:33,230
+Entonces, lo que realmente puede tener si se desplaza hacia abajo a los datos jerrquicos es que puede tener una
+
+39
+00:02:33,230 --> 00:02:41,790
+carpeta de Salas para una coleccin con la Sala A y B, que son ambos documentos, pero donde la Sala A podra tener un
+
+40
+00:02:41,840 --> 00:02:43,170
+mensaje simplemente subcoleccionado.
+
+41
+00:02:43,190 --> 00:02:47,250
+Entonces la recoleccin de deudas es parte del documento que es parte de una coleccin.
+
+42
+00:02:47,450 --> 00:02:53,380
+Y siempre tiene este patrn alternativo de documento de coleccin de documentos de coleccin.
+
+43
+00:02:53,390 --> 00:03:00,000
+Ahora, cul es la informacin ?, entonces, los datos son los que estn dentro de un documento adems de cualquier posible subcoleccin.
+
+44
+00:03:00,110 --> 00:03:05,910
+Entonces, en este caso, su habitacin A tiene el nombre de datos que contiene un valor de mi sala de chat.
+
+45
+00:03:06,020 --> 00:03:09,070
+Y luego, adems, tambin tiene la subcoleccin.
+
+46
+00:03:09,230 --> 00:03:15,470
+Ahora los datos en el documento realmente son como en un objeto javascript o para ser precisos como Chase y pares
+
+47
+00:03:15,620 --> 00:03:17,270
+de valores clave de datos.
+
+48
+00:03:17,660 --> 00:03:19,490
+Esta es la historia del fuego en la nube.
+
+49
+00:03:19,490 --> 00:03:21,370
+No est destinado a almacenar archivos.
+
+50
+00:03:21,380 --> 00:03:23,780
+Por cierto, no almacena imgenes all.
+
+51
+00:03:23,810 --> 00:03:27,250
+Est ah para almacenar datos de texto de datos si lo desea.
+
+52
+00:03:27,740 --> 00:03:30,410
+As que esto es para nublar la tormenta de fuego en pocas palabras.
+
+53
+00:03:30,440 --> 00:03:34,450
+Y de nuevo, puedes profundizar en Firebase en general si ests interesado.
+
+54
+00:03:34,610 --> 00:03:37,580
+Pero el ngulo de fuego es ahora lo que quiero echar un vistazo.
+
+55
+00:03:37,670 --> 00:03:43,610
+Pero para hacer eso debemos volver a nuestra consola y simplemente agregar nuestra primera coleccin.
+
+56
+00:03:43,620 --> 00:03:50,150
+Ahora recuerde que quiero configurar algunos datos que podemos utilizar para completar nuestros datos de nivel de ejercicio.
+
+57
+00:03:50,450 --> 00:03:58,040
+Entonces, simplemente nombrara los ejercicios disponibles ahora, haga clic en siguiente.
+
+58
+00:03:58,230 --> 00:04:00,620
+Y ahora me permite crear un nuevo documento.
+
+59
+00:04:00,900 --> 00:04:07,590
+De hecho, es capaz de generar una identificacin para ese documento de forma automtica, lo que quizs desee hacer.
+
+60
+00:04:08,100 --> 00:04:11,140
+Y luego puedes asignar pares de valores clave.
+
+61
+00:04:11,160 --> 00:04:15,940
+Por ejemplo, si echa un vistazo a nuestro cdigo, cada ejercicio de nosotros tiene una idea.
+
+62
+00:04:15,990 --> 00:04:18,010
+Ahora aqu tenemos uno claramente legible.
+
+63
+00:04:18,030 --> 00:04:23,800
+Pero podemos tomar el generado automticamente y luego tenemos un nombre de duracin y caloras.
+
+64
+00:04:23,820 --> 00:04:25,590
+As que vamos a crear esto aqu tambin.
+
+65
+00:04:25,770 --> 00:04:30,420
+Agreguemos un nombre y el primero debe ser crujidos y es historia.
+
+66
+00:04:30,420 --> 00:04:32,610
+Ahora agreguemos otro campo aqu.
+
+67
+00:04:32,670 --> 00:04:35,250
+Ese campo es la duracin.
+
+68
+00:04:35,250 --> 00:04:37,580
+No es una cadena sino un nmero.
+
+69
+00:04:37,800 --> 00:04:40,550
+Y para los abdominales tuvimos 30 segundos.
+
+70
+00:04:40,590 --> 00:04:42,530
+Entonces ingresemos 30.
+
+71
+00:04:42,570 --> 00:04:45,570
+Por ltimo, pero no menos importante, tenemos las caloras.
+
+72
+00:04:45,570 --> 00:04:50,360
+Las caloras para los abdominales tambin son un nmero.
+
+73
+00:04:50,490 --> 00:04:52,470
+Y all fueron las ocho.
+
+74
+00:04:52,590 --> 00:04:53,770
+Como puedes ver.
+
+75
+00:04:54,360 --> 00:04:56,120
+Entonces esta es nuestra coleccin.
+
+76
+00:04:56,160 --> 00:05:01,740
+Y si lo desea, tambin puede asignar su propia identificacin nica aqu y usar crujidos de nuevo
+
+77
+00:05:01,740 --> 00:05:03,540
+en lugar de la generada automticamente.
+
+78
+00:05:03,750 --> 00:05:06,020
+Usar ese generado automticamente.
+
+79
+00:05:06,030 --> 00:05:08,860
+Esto evita colisiones de nuestros datos.
+
+80
+00:05:08,970 --> 00:05:11,130
+Entonces ese es nuestro primer documento.
+
+81
+00:05:11,130 --> 00:05:19,350
+Si hemos ahorrado ahora, se crear y ahora puede ver la coleccin en el documento de la coleccin.
+
+82
+00:05:19,350 --> 00:05:25,500
+Y como puede ver, ahora puede agregar ms campos o sub colecciones, este patrn alternativo que
+
+83
+00:05:25,500 --> 00:05:26,480
+puede seguir.
+
+84
+00:05:26,520 --> 00:05:29,340
+Pero, por supuesto, aqu no necesito algunas colecciones.
+
+85
+00:05:29,670 --> 00:05:31,960
+As que tenemos ms de un ejercicio sin embargo.
+
+86
+00:05:32,040 --> 00:05:35,710
+Entonces, creemos rpidamente documentos para los ejercicios de ABA.
+
+87
+00:05:35,820 --> 00:05:40,170
+As que aqu tenemos el campo de nombre y el nombre fue tocado hos.
+
+88
+00:05:40,260 --> 00:05:45,750
+Tambin podemos recordar la duracin que fue de 180 caloras que fueron 15.
+
+89
+00:05:46,020 --> 00:05:51,970
+As que permtanme ingresar rpidamente el nombre y luego la duracin 180.
+
+90
+00:05:51,970 --> 00:05:59,070
+Aunque ese es un nmero y las caloras que fueron 15 tambin un nmero por cierto.
+
+91
+00:05:59,230 --> 00:06:07,130
+En mi caso aqu estoy ltigo, estoy usando la misma estructura para todos mis documentos.
+
+92
+00:06:07,180 --> 00:06:10,450
+Todos tienen un nombre caloras y una duracin.
+
+93
+00:06:10,450 --> 00:06:15,040
+Esto no es obligatorio, aunque podra tener diferentes campos para diferentes documentos.
+
+94
+00:06:15,040 --> 00:06:21,850
+Firestorm es una base de datos sin esquema aqu, sin embargo, tiene sentido usar el mismo porque bien mis ejercicios
+
+95
+00:06:21,880 --> 00:06:24,060
+simplemente estaban en la misma estructura.
+
+96
+00:06:24,220 --> 00:06:27,380
+As que vamos a crear el prximo lado del ejercicio lungis.
+
+97
+00:06:27,400 --> 00:06:33,590
+Entonces aqu el nombre es side lungis y luego tenemos 120 y 18.
+
+98
+00:06:33,610 --> 00:06:35,360
+Entonces, agreguemos esto rpidamente aqu.
+
+99
+00:06:35,530 --> 00:06:44,260
+Agreguemos que una duracin de campo es el nmero 120 y luego 18 para las caloras.
+
+100
+00:06:44,260 --> 00:06:46,930
+Entonces, aqu vamos a agregar caloras rpidamente.
+
+101
+00:06:47,080 --> 00:06:52,150
+Nmero 18 y con eso fuimos creados.
+
+102
+00:06:52,150 --> 00:06:55,570
+Ahora a la ltima informacin pieza por pieza.
+
+103
+00:06:55,750 --> 00:06:57,330
+Copiemos Burpy aqu.
+
+104
+00:06:57,520 --> 00:07:03,000
+Agregue un documento, cree una ID automticamente y cree nuestro nombre Burpy.
+
+105
+00:07:03,180 --> 00:07:06,680
+Y para Burpy tenemos una duracin de sesenta y ocho caloras.
+
+106
+00:07:06,760 --> 00:07:15,150
+As que vamos a una iteracin lateral que es un tipo de nmero 60 y luego caloras es tambin un nmero.
+
+107
+00:07:15,220 --> 00:07:17,170
+Y eso fue ocho.
+
+108
+00:07:17,260 --> 00:07:22,030
+Y con eso creamos todos los datos que usamos en nuestra aplicacin en la base de datos.
+
+109
+00:07:22,090 --> 00:07:28,360
+Firebase nos ofrece tictac West ahora, as es cmo conectamos angular a eso.
+
+110
+00:07:28,360 --> 00:07:30,670
+La respuesta, por supuesto, es fuego angular.
+
+111
+00:07:30,710 --> 00:07:33,930
+Y vamos a instalarlo y usarlo en la prxima conferencia como.
+

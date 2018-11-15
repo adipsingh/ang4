@@ -1,0 +1,444 @@
+1
+00:00:02,250 --> 00:00:09,330
+Obter zona a ltima palestra que expliquei como os observveis funcionam de uma forma muito condensada, vamos simplesmente v-lo
+
+2
+00:00:09,330 --> 00:00:10,010
+em ao.
+
+3
+00:00:10,010 --> 00:00:11,810
+O que voc acha disso.
+
+4
+00:00:11,850 --> 00:00:14,970
+Ento voc v isso em ao, antes de tudo precisa de alguns dados.
+
+5
+00:00:14,970 --> 00:00:20,400
+Ento, vamos voltar para o firebase e ir para a seo do banco de dados.
+
+6
+00:00:20,430 --> 00:00:22,800
+Agora voc tem a escolha entre dois bancos de dados.
+
+7
+00:00:22,860 --> 00:00:26,070
+Os dados em tempo real e os armazenadores da nuvem so armazenados.
+
+8
+00:00:26,130 --> 00:00:28,790
+Ainda est em beta no momento em que registra isso.
+
+9
+00:00:28,800 --> 00:00:34,010
+Mas deve ser seguro usar e  a prxima oferta de banco de dados gen pela firebase.
+
+10
+00:00:34,200 --> 00:00:39,710
+Ento, vamos clicar em try fires door e vamos comear no modo de teste.
+
+11
+00:00:39,870 --> 00:00:40,890
+Agora aqui importante.
+
+12
+00:00:40,890 --> 00:00:43,440
+Qualquer um pode ler ou escrever seu banco de dados.
+
+13
+00:00:43,470 --> 00:00:46,850
+Ento, isso  realmente apenas para ns agora comearmos rapidamente.
+
+14
+00:00:46,890 --> 00:00:53,580
+Posteriormente, alternaremos para o modo de bloqueio para garantir que apenas os usurios do cabo offene possam ler e gravar
+
+15
+00:00:53,580 --> 00:00:54,150
+os dados.
+
+16
+00:00:54,270 --> 00:00:56,690
+Por enquanto, vamos comear no modo de teste aqui.
+
+17
+00:00:57,740 --> 00:01:04,220
+Isso agora desejar na loja de bombeiros para ns e preparar tudo para que possamos us-lo quando tudo
+
+18
+00:01:04,220 --> 00:01:05,050
+estiver preparado.
+
+19
+00:01:05,060 --> 00:01:07,820
+ assim que a tempestade de nuvens se parece.
+
+20
+00:01:07,820 --> 00:01:10,900
+Agora, como a tempestade de nuvens realmente funciona?
+
+21
+00:01:11,660 --> 00:01:16,850
+Os documentos oficiais so um timo lugar para aprender mais, mas deixe-me gui-lo rapidamente pelos principais conceitos
+
+22
+00:01:17,240 --> 00:01:22,670
+e, em seguida, mostraremos o exemplo dos documentos, porque eles so realmente timos para entender como funciona a
+
+23
+00:01:22,670 --> 00:01:23,840
+nuvem da Firestar.
+
+24
+00:01:24,110 --> 00:01:26,250
+E um timo lugar para voc mergulhar mais fundo.
+
+25
+00:01:26,420 --> 00:01:34,340
+Portanto, os classificadores disparam tornados quando se trabalha com a nuvem de fogo, e voc pode comparar com
+
+26
+00:01:34,430 --> 00:01:40,430
+pastas nos documentos do sistema operacional que voc pode comparar com documentos no sistema
+
+27
+00:01:40,430 --> 00:01:46,520
+operacional que so organizados em pastas ou colees neste caso e em dados. dentro
+
+28
+00:01:46,520 --> 00:01:47,870
+de um documento.
+
+29
+00:01:48,050 --> 00:01:51,490
+Agora  uma boa foto para entender com o que estamos trabalhando.
+
+30
+00:01:51,800 --> 00:01:58,220
+A idia de cair na histria do fogo, se voc armazenar documentos e voc terminar um documento
+
+31
+00:01:58,220 --> 00:02:03,320
+poderia ser os dados sobre um nico usurio, vrios usurios teriam vrios documentos.
+
+32
+00:02:03,320 --> 00:02:06,350
+Agora os documentos fazem parte das colees.
+
+33
+00:02:06,350 --> 00:02:09,710
+Voc deve ter documentos em uma coleo de colees.
+
+34
+00:02:09,710 --> 00:02:11,500
+Lembre-se que  apenas uma pasta.
+
+35
+00:02:11,600 --> 00:02:17,390
+Portanto, neste exemplo, temos a pasta de um usurio com dois documentos, dois usurios.
+
+36
+00:02:17,390 --> 00:02:23,620
+Agora voc tambm pode ter colees que esto aninhadas, embora voc no possa ter uma coleo dentro de uma coleo.
+
+37
+00:02:23,690 --> 00:02:25,700
+Mas como filho de um documento.
+
+38
+00:02:26,000 --> 00:02:33,230
+Ento, o que voc pode realmente fazer se voc rolar para os dados hierrquicos  que voc pode ter
+
+39
+00:02:33,230 --> 00:02:41,790
+uma pasta Rooms para uma coleo com Room A e B, que so ambos documentos, mas onde a Room A pode ter apenas
+
+40
+00:02:41,840 --> 00:02:43,170
+uma subcoleo de mensagem.
+
+41
+00:02:43,190 --> 00:02:47,250
+Assim, a cobrana de dvidas faz parte do documento que faz parte de uma coleo.
+
+42
+00:02:47,450 --> 00:02:53,380
+E voc sempre tem esse padro alternativo de documento de coleo de documentos de coleo.
+
+43
+00:02:53,390 --> 00:03:00,000
+Agora, quais so os dados, ento os dados so o que h dentro de um documento alm de quaisquer subcoletas possveis.
+
+44
+00:03:00,110 --> 00:03:05,910
+Portanto, neste caso, o seu quarto A tem o nome de dados que contm um valor da minha sala de chat.
+
+45
+00:03:06,020 --> 00:03:09,070
+E, alm disso, tambm tem a subcoleo.
+
+46
+00:03:09,230 --> 00:03:15,470
+Agora, os dados no documento realmente so semelhantes em um objeto javascript ou, para serem precisos, como pares de valores de
+
+47
+00:03:15,620 --> 00:03:17,270
+chave Chase e de dados.
+
+48
+00:03:17,660 --> 00:03:19,490
+Esta  a histria do fogo da nuvem.
+
+49
+00:03:19,490 --> 00:03:21,370
+No  para armazenar arquivos.
+
+50
+00:03:21,380 --> 00:03:23,780
+Pela maneira que voc no armazena imagens l.
+
+51
+00:03:23,810 --> 00:03:27,250
+Est l para armazenar dados de texto de dados se voc quiser.
+
+52
+00:03:27,740 --> 00:03:30,410
+Ento, isso  para nuvem tempestade em poucas palavras.
+
+53
+00:03:30,440 --> 00:03:34,450
+E, novamente, voc pode mergulhar mais fundo no Firebase em geral, se estiver interessado.
+
+54
+00:03:34,610 --> 00:03:37,580
+Mas o ngulo de fogo  agora o que eu quero dar uma olhada.
+
+55
+00:03:37,670 --> 00:03:43,610
+Mas para isso devemos voltar ao nosso console e simplesmente adicionar nossa primeira coleo.
+
+56
+00:03:43,620 --> 00:03:50,150
+Agora lembre-se de que quero configurar alguns dados que podemos usar para preencher nossos dados de exerccios de nvel de distncia.
+
+57
+00:03:50,450 --> 00:03:58,040
+Ento eu simplesmente nomearia os exerccios disponveis agora clique em prximo.
+
+58
+00:03:58,230 --> 00:04:00,620
+E agora isso me permite criar um novo documento.
+
+59
+00:04:00,900 --> 00:04:07,590
+Na verdade,  capaz de gerar automaticamente um ID para esse documento, o que voc pode querer fazer.
+
+60
+00:04:08,100 --> 00:04:11,140
+E ento voc pode atribuir pares de valores-chave.
+
+61
+00:04:11,160 --> 00:04:15,940
+Por exemplo, se voc der uma olhada no nosso cdigo, cada exerccio de ns tem uma idia.
+
+62
+00:04:15,990 --> 00:04:18,010
+Agora aqui ns tivemos um claramente legvel.
+
+63
+00:04:18,030 --> 00:04:23,800
+Mas podemos pegar o gerado automaticamente e depois temos uma durao de nome e calorias.
+
+64
+00:04:23,820 --> 00:04:25,590
+Ento, vamos agora criar isso aqui tambm.
+
+65
+00:04:25,770 --> 00:04:30,420
+Vamos adicionar um nome e o primeiro deve ser crunches e  histria.
+
+66
+00:04:30,420 --> 00:04:32,610
+Agora vamos adicionar outro campo aqui.
+
+67
+00:04:32,670 --> 00:04:35,250
+Esse campo  a durao.
+
+68
+00:04:35,250 --> 00:04:37,580
+No  uma string, mas um nmero.
+
+69
+00:04:37,800 --> 00:04:40,550
+E para crunches, tivemos 30 segundos.
+
+70
+00:04:40,590 --> 00:04:42,530
+Ento vamos entrar 30.
+
+71
+00:04:42,570 --> 00:04:45,570
+Por ltimo mas no menos importante, temos as calorias.
+
+72
+00:04:45,570 --> 00:04:50,360
+As calorias para crunches tambm so um nmero.
+
+73
+00:04:50,490 --> 00:04:52,470
+E l estavam oito.
+
+74
+00:04:52,590 --> 00:04:53,770
+Como voc pode ver.
+
+75
+00:04:54,360 --> 00:04:56,120
+Ento esta  nossa coleo.
+
+76
+00:04:56,160 --> 00:05:01,740
+E se voc quiser,  claro que tambm pode atribuir seu prprio ID aqui e usar crunches
+
+77
+00:05:01,740 --> 00:05:03,540
+novamente em vez do gerado automaticamente.
+
+78
+00:05:03,750 --> 00:05:06,020
+Eu usarei isso automaticamente.
+
+79
+00:05:06,030 --> 00:05:08,860
+Isso evita colises de nossos dados.
+
+80
+00:05:08,970 --> 00:05:11,130
+Ento esse  o nosso primeiro documento.
+
+81
+00:05:11,130 --> 00:05:19,350
+Se tivssemos salvar agora, ele ser criado e voc poder ver a coleo no documento da coleo.
+
+82
+00:05:19,350 --> 00:05:25,500
+E como voc pode ver agora voc pode adicionar mais campos ou sub-colees que este padro alternativo que
+
+83
+00:05:25,500 --> 00:05:26,480
+voc pode seguir.
+
+84
+00:05:26,520 --> 00:05:29,340
+Mas  claro que aqui no preciso de algumas colees.
+
+85
+00:05:29,670 --> 00:05:31,960
+Ento temos mais de um exerccio.
+
+86
+00:05:32,040 --> 00:05:35,710
+Ento, vamos criar rapidamente documentos para os exerccios ABA.
+
+87
+00:05:35,820 --> 00:05:40,170
+Ento aqui temos o nome do campo e o nome foi tocado.
+
+88
+00:05:40,260 --> 00:05:45,750
+Ns tambm j podemos lembrar a durao que foi de 180 calorias que foram 15.
+
+89
+00:05:46,020 --> 00:05:51,970
+Ento deixe-me digitar rapidamente o nome e depois a durao 180.
+
+90
+00:05:51,970 --> 00:05:59,070
+Embora isso seja um nmero e as calorias que foram 15 tambm um nmero pelo caminho.
+
+91
+00:05:59,230 --> 00:06:07,130
+No meu caso, aqui estou eu usando a mesma estrutura para todos os meus documentos.
+
+92
+00:06:07,180 --> 00:06:10,450
+Todos eles tm um nome calorias e uma durao.
+
+93
+00:06:10,450 --> 00:06:15,040
+Isso no  necessrio, embora voc possa ter campos diferentes para documentos diferentes.
+
+94
+00:06:15,040 --> 00:06:21,850
+Firestorm  um banco de dados com menos esquemas aqui, no entanto, faz sentido usar o mesmo, porque bem,
+
+95
+00:06:21,880 --> 00:06:24,060
+meus exerccios estavam na mesma estrutura.
+
+96
+00:06:24,220 --> 00:06:27,380
+Ento, vamos criar o prximo lado do pulmo do exerccio.
+
+97
+00:06:27,400 --> 00:06:33,590
+Ento aqui o nome  lungis lateral e ento temos 120 e 18.
+
+98
+00:06:33,610 --> 00:06:35,360
+Ento, vamos adicionar rapidamente isso aqui.
+
+99
+00:06:35,530 --> 00:06:44,260
+Vamos adicionar uma durao de campo  o nmero 120 e, em seguida, 18 para as calorias.
+
+100
+00:06:44,260 --> 00:06:46,930
+Ento, vamos adicionar rapidamente calorias.
+
+101
+00:06:47,080 --> 00:06:52,150
+Nmero 18 e com isso ns fomos criados.
+
+102
+00:06:52,150 --> 00:06:55,570
+Agora para o ltimo dado pea por pea.
+
+103
+00:06:55,750 --> 00:06:57,330
+Vamos copiar o Burpy aqui.
+
+104
+00:06:57,520 --> 00:07:03,000
+Adicione um documento crie um ID automaticamente e crie o nosso nome Burpy is.
+
+105
+00:07:03,180 --> 00:07:06,680
+E para Burpy, temos uma durao de sessenta e oito calorias.
+
+106
+00:07:06,760 --> 00:07:15,150
+Ento vamos uma iterao lateral que  um tipo de nmero 60 e ento a caloria tambm  um nmero.
+
+107
+00:07:15,220 --> 00:07:17,170
+E isso foi oito.
+
+108
+00:07:17,260 --> 00:07:22,030
+E com isso criamos todos os dados que usamos em nosso aplicativo no banco de dados.
+
+109
+00:07:22,090 --> 00:07:28,360
+O Firebase nos oferece o tick West agora  como nos conectamos de forma angular a isso.
+
+110
+00:07:28,360 --> 00:07:30,670
+A resposta, claro,  o fogo angular.
+
+111
+00:07:30,710 --> 00:07:33,930
+E vamos instalar e usar na prxima palestra como.
+

@@ -1,0 +1,288 @@
+1
+00:00:02,260 --> 00:00:05,660
+Entonces en las ltimas conferencias te present al ngulo de fuego.
+
+2
+00:00:05,710 --> 00:00:12,640
+Y usamos un poco de magia absorbible combinada con cambios de instantneas para obtener exactamente los datos de nuestra
+
+3
+00:00:12,700 --> 00:00:13,870
+coleccin que necesitamos.
+
+4
+00:00:14,230 --> 00:00:16,710
+Ahora, por supuesto, quiero llevar esto un paso ms all.
+
+5
+00:00:16,720 --> 00:00:20,300
+Es bueno que podamos seleccionar esto en el men desplegable.
+
+6
+00:00:20,430 --> 00:00:28,170
+Si comenzamos un nuevo ejercicio, entonces presentamos nuestro formulario de ejercicio y luego ese ejercicio para l.
+
+7
+00:00:28,170 --> 00:00:30,950
+Por supuesto, tenemos esa idea que seleccionamos.
+
+8
+00:00:31,110 --> 00:00:37,440
+Entonces, en el servicio de capacitacin donde al final tenemos el mtodo que se ejecuta en el ejercicio de
+
+9
+00:00:37,440 --> 00:00:43,080
+inicio, estamos obteniendo esa idea y estamos tratando de sacar fatuus de un ejercicio de ballena que
+
+10
+00:00:43,080 --> 00:00:47,770
+ahora fracasar porque el ejercicio de un ballenero aqu ya no es pertinente.
+
+11
+00:00:47,790 --> 00:00:55,100
+De hecho, podemos deshacernos de l porque no estamos buscando directamente los ejercicios en nuestro componente.
+
+12
+00:00:55,100 --> 00:01:00,660
+Ahora, para ser sincero, todava tendra sentido buscarlo aqu en el servicio.
+
+13
+00:01:00,780 --> 00:01:08,880
+Deberamos tener nuestra variedad de ejercicios de balleneros aqu para que podamos seguir usando la estatua para comenzar el
+
+14
+00:01:09,120 --> 00:01:11,450
+ejercicio y completar el ejercicio.
+
+15
+00:01:11,460 --> 00:01:16,590
+Solo debemos inicializar una matriz muerta de actualizacin con datos provenientes de la base de datos.
+
+16
+00:01:17,370 --> 00:01:24,720
+Entonces, lo que podramos querer es renombrar los ejercicios de un ballenero para buscar los ejercicios disponibles
+
+17
+00:01:24,720 --> 00:01:33,840
+y tomar la lgica del nuevo componente de capacitacin aqu y de la ONG y ejecutar este cdigo aqu en nuestro
+
+18
+00:01:33,900 --> 00:01:35,040
+servicio de capacitacin.
+
+19
+00:01:35,040 --> 00:01:42,570
+As que lo cortar e ir al servicio de capacitacin y lo ejecutar aqu, de hecho, los ejercicios disponibles ahora.
+
+20
+00:01:42,600 --> 00:01:48,450
+Este TB no es un proyecto de ley porque an no hemos inyectado ese ngulo de Firestorm en el servicio.
+
+21
+00:01:48,610 --> 00:01:53,630
+Hagamos eso y inyectemos algo que debemos agregar al inyectable aqu.
+
+22
+00:01:53,730 --> 00:01:59,730
+Ahora el inyectable debe importarse desde cualquier ngulo, por lo que debe asegurarse de agregar esta importacin y una vez que se
+
+23
+00:01:59,730 --> 00:02:05,620
+haya agregado. Puede agregar un constructo para su fin y verificar la base de datos que es solo el ngulo de fuego.
+
+24
+00:02:05,620 --> 00:02:14,010
+Guarda el objeto que importas de una tienda de bomberos regular.
+
+25
+00:02:14,010 --> 00:02:15,270
+Entonces, esto inyecta eso?
+
+26
+00:02:15,270 --> 00:02:17,070
+Ahora este cdigo funciona.
+
+27
+00:02:17,250 --> 00:02:21,410
+Ahora quiero completar mis ejercicios disponibles como dije.
+
+28
+00:02:21,570 --> 00:02:27,570
+As que aqu, en realidad, ahora aadir suscribirse y ya no usar el canal
+
+29
+00:02:27,590 --> 00:02:37,110
+asincrnico porque quiero usar este programa de resultados mdicamente y obtener mis ejercicios que incluso podemos declarar explcitamente desde una perspectiva tipo como
+
+30
+00:02:37,470 --> 00:02:42,920
+una serie de ejercicios, porque eso es lo que eventualmente recibimos aqu .
+
+31
+00:02:43,080 --> 00:02:49,890
+Ahora, en esta funcin erro, puedo establecer esto de forma que los ejercicios sean iguales a los ejercicios.
+
+32
+00:02:49,920 --> 00:02:55,230
+As que los ejercicios volvieron de Firestar Y ahora lo tenemos en el servicio.
+
+33
+00:02:55,230 --> 00:03:02,310
+El problema es que ahora ya no podemos usarlo en nuestro nuevo componente de capacitacin, aunque ahora est roto.
+
+34
+00:03:02,310 --> 00:03:04,920
+Y aqu necesitamos estos nuevos ejercicios.
+
+35
+00:03:04,920 --> 00:03:11,730
+Entonces, cmo podemos hacer que lleguen aqu a una buena solucin? Es simplemente responder a un evento cada vez
+
+36
+00:03:11,730 --> 00:03:13,280
+que recibamos nuevos ejercicios.
+
+37
+00:03:13,560 --> 00:03:23,980
+Entonces aqu podramos agregar ejercicios cambiados y establecerlos como un nuevo tema de tipo array de ejercicios porque eso es
+
+38
+00:03:24,040 --> 00:03:26,040
+lo que estamos emitiendo.
+
+39
+00:03:26,440 --> 00:03:30,000
+Y queremos activar esto cada vez que tenemos nuevos ejercicios.
+
+40
+00:03:30,010 --> 00:03:35,850
+Entonces aqu, justo despus de que los almacenamos, todos llamamos a este ejercicio cesse cambiado.
+
+41
+00:03:35,980 --> 00:03:43,210
+Y el siguiente y emitir y luego Ray con todos los ejercicios disponibles. Estoy usando una nueva matriz con
+
+42
+00:03:43,240 --> 00:03:50,320
+el operador de propagacin para crear una copia para que no pasemos la matriz original por razones de mutabilidad.
+
+43
+00:03:51,340 --> 00:03:56,200
+Entonces, ahora estamos emitiendo esto, ahora podemos suscribirnos a esto en un nuevo entrenamiento.
+
+44
+00:03:56,200 --> 00:03:58,730
+Entonces aqu en NJ y en eso quiero hacer dos cosas.
+
+45
+00:03:58,860 --> 00:04:04,240
+Me pondr en contacto con el servicio de capacitacin y llamo a buscar ejercicios disponibles como este.
+
+46
+00:04:04,240 --> 00:04:08,160
+Esto est ah para siempre llamado cuando vamos a un nuevo entrenamiento.
+
+47
+00:04:08,270 --> 00:04:12,500
+Tambin quiero suscribirme a este tema recin creado.
+
+48
+00:04:12,560 --> 00:04:19,980
+Entonces, en un servicio de capacitacin obtuvimos los ejercicios cambiados de tema y me suscribir a l ahora, ya que me suscribo
+
+49
+00:04:19,980 --> 00:04:20,900
+a un tema.
+
+50
+00:04:20,960 --> 00:04:24,490
+Tambin quiero importar suscripciones para que podamos cancelar la suscripcin.
+
+51
+00:04:24,740 --> 00:04:30,060
+As que importar observaciones y suscripciones de nuestra X. J. S. Tu todo entonces crea mi suscripcin de ejercicio que es una suscripcin de
+
+52
+00:04:30,080 --> 00:04:42,810
+tipo y todos almacenan esta subscripcin y suscripcin de ejercicio.
+
+53
+00:04:42,900 --> 00:04:45,360
+Ahora, en el mtodo SUSCRIBIR aqu,
+
+54
+00:04:45,360 --> 00:04:52,080
+quiero hacer algo. Obtengo mis ejercicios y simplemente quiero establecer esto igual a este ejercicio en este componente.
+
+55
+00:04:52,080 --> 00:04:57,180
+Ahora este ejercicio se estableci en un observable.
+
+56
+00:04:57,180 --> 00:05:00,750
+Ahora est establecido y funciona bien a un ritmo de ejercicio como lo fue anteriormente en este curso.
+
+57
+00:05:00,750 --> 00:05:07,850
+Tenemos nuestra suscripcin
+
+58
+00:05:09,420 --> 00:05:10,770
+Tambin debemos cancelar la suscripcin si el componente se destruye.
+
+59
+00:05:10,770 --> 00:05:14,540
+As que agreguemos la interfaz de destruccin aqu
+
+60
+00:05:14,610 --> 00:05:25,010
+y tambin importamos datos desde un ncleo singular y estemos ah para todos y ahora implementamos ngi en destruir y el nuevo componente
+
+61
+00:05:25,010 --> 00:05:33,020
+de capacitacin y dijimos que este ejercicio es suscripcin o cole esta suscripcin de suscripcin de ejercicio cuando
+
+62
+00:05:33,110 --> 00:05:39,410
+no se active un disco podemos comprar y tambin eliminar la inyeccin del fuego.
+
+63
+00:05:39,410 --> 00:05:41,990
+La tienda del pescador dispara el servicio de almacenamiento y elimina esa importacin.
+
+64
+00:05:41,990 --> 00:05:47,120
+Ahora deberamos informarnos cada vez que ejercite el cambio.
+
+65
+00:05:47,150 --> 00:05:51,200
+Almacenamos nuestros ejercicios aqu e inicializamos
+
+66
+00:05:51,290 --> 00:06:00,950
+la obtencin de ejercicios con esta llamada en la nueva plantilla de capacitacin.
+
+67
+00:06:01,070 --> 00:06:02,480
+Ya no necesitamos la tubera de sumidero ahora porque el componente de ndice no tiene un cdigo asncrono.
+
+68
+00:06:02,570 --> 00:06:07,760
+Acabamos de recibir una serie de ejercicios y nada ms.
+
+69
+00:06:07,760 --> 00:06:10,940
+Si ahora guardamos eso y volvemos a encerrarnos,
+
+70
+00:06:12,500 --> 00:06:16,070
+an ver estos valores luego de un corto tiempo.
+
+71
+00:06:20,830 --> 00:06:24,010
+Entonces eso todava est funcionando.
+
+72
+00:06:24,010 --> 00:06:25,400
+&nbsp;
+

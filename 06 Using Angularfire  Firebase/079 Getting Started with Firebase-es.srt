@@ -1,0 +1,132 @@
+1
+00:00:02,170 --> 00:00:04,130
+Soy toda la pgina de firebase ahora.
+
+2
+00:00:04,180 --> 00:00:07,510
+Y como dije, es un proveedor de servicios que, por supuesto, cobra dinero.
+
+3
+00:00:07,630 --> 00:00:13,960
+Puede consultar la pgina de precios para averiguar qu pagar y tienen un plan de niveles gratuito
+
+4
+00:00:13,960 --> 00:00:14,880
+muy generoso aqu.
+
+5
+00:00:14,950 --> 00:00:20,170
+Entonces, las cosas que vamos a usar aqu en este mdulo deberan ser absolutamente gratis.
+
+6
+00:00:20,200 --> 00:00:26,770
+Si los usa en la misma cantidad que los utilic aqu en este curso, si supera estos lmites,
+
+7
+00:00:26,770 --> 00:00:29,820
+no estar en bancarrota en un par de horas.
+
+8
+00:00:29,890 --> 00:00:34,150
+De hecho, recibir una advertencia y ni siquiera necesita una tarjeta de crdito para comenzar.
+
+9
+00:00:34,210 --> 00:00:36,160
+Entonces ests absolutamente seguro.
+
+10
+00:00:36,160 --> 00:00:37,390
+Entonces ese es el precio.
+
+11
+00:00:37,510 --> 00:00:39,390
+Qu pasa con los servicios que utilizaremos?
+
+12
+00:00:39,650 --> 00:00:47,080
+Si hace clic en los productos, los servicios que utilizaremos son en realidad la tienda de firers en la nube,
+
+13
+00:00:47,080 --> 00:00:55,180
+que es su ltima solucin basada en datos que podemos usar y que es altamente escalable y rpida, y usa autenticacin.
+
+14
+00:00:55,180 --> 00:01:01,780
+Entonces estos dos servicios aqu ahora siempre pueden sumergirse en los muelles aqu para aprender ms acerca de los servicios
+
+15
+00:01:01,840 --> 00:01:05,870
+si hay algunos casos que no estn cubiertos como curso o curso.
+
+16
+00:01:05,890 --> 00:01:09,240
+Como mencion, por supuesto, no hay una pista de inmersin profunda de Firebase.
+
+17
+00:01:09,630 --> 00:01:16,180
+Ahora, para comenzar, lo que tendr que hacer es dirigirse a la consola de fuego y para
+
+18
+00:01:16,180 --> 00:01:21,730
+eso necesitar una cuenta de Google y luego deber crear un nuevo proyecto aqu.
+
+19
+00:01:21,790 --> 00:01:24,420
+Entonces har eso rpidamente y lo nombrar.
+
+20
+00:01:24,430 --> 00:01:31,060
+El rastreador de fitness de energa puede elegir cualquier nombre que desee ahora elija su regin que no afecta
+
+21
+00:01:31,120 --> 00:01:32,480
+el precio por cierto.
+
+22
+00:01:32,770 --> 00:01:35,160
+Y luego haz clic en Crear proyecto.
+
+23
+00:01:35,290 --> 00:01:41,080
+Ahora, esto configurar un proyecto de base de datos para usted donde podr acceder a todos estos servicios.
+
+24
+00:01:41,110 --> 00:01:42,140
+Estaba mencionando.
+
+25
+00:01:42,210 --> 00:01:48,250
+Ahora, de nuevo, solo utilizaremos la base de datos en autenticacin, pero ver que estos son sus servicios principales, lo que
+
+26
+00:01:48,580 --> 00:01:53,090
+tambin se indica por el hecho de que son los dos principales servicios que vemos aqu.
+
+27
+00:01:53,140 --> 00:01:59,230
+Esa es la consola de Firebase y sintase libre de explorarla y explorar sus ofertas
+
+28
+00:01:59,980 --> 00:02:01,920
+de servicios en nuestra aplicacin.
+
+29
+00:02:01,930 --> 00:02:10,000
+Quiero comenzar agregando una base de datos para buscar los ejercicios que ofrecemos no desde nuestro servicio donde
+
+30
+00:02:10,000 --> 00:02:11,140
+actualmente los codificamos.
+
+31
+00:02:11,160 --> 00:02:16,720
+Eche un vistazo a nuestro servicio de capacitacin que tenemos todos nuestros ejercicios codificados
+
+32
+00:02:16,720 --> 00:02:21,790
+en lugar de querer obtenerlos de firebase y usar un fuego singular.
+
+33
+00:02:21,790 --> 00:02:23,860
+Ahora, qu es un singular disparado?
+

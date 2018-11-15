@@ -1,0 +1,188 @@
+1
+00:00:02,240 --> 00:00:04,920
+Hora de reorganizar nosso cdigo um pouco mais.
+
+2
+00:00:05,180 --> 00:00:08,980
+Vamos aproveitar um recurso fornecido pelo ngulo de tiro.
+
+3
+00:00:08,990 --> 00:00:13,650
+Podemos ouvir qualquer alterao no nosso status de autenticao.
+
+4
+00:00:13,760 --> 00:00:25,530
+Ento, vamos fazer isso e, para isso, adicionar um novo mtodo, chamar isso de ouvinte.
+
+5
+00:00:25,610 --> 00:00:26,410
+L.
+
+6
+00:00:26,610 --> 00:00:32,970
+Todos os quais so dois disparos angulares e h esse objeto off state.
+
+7
+00:00:32,970 --> 00:00:35,940
+Este  realmente um observvel ao qual podemos nos inscrever.
+
+8
+00:00:36,360 --> 00:00:40,650
+E emitir um evento quando o status de autenticao do Evergrey for alterado.
+
+9
+00:00:40,650 --> 00:00:45,290
+Ento, quando passamos do crdito offene para o dio no ofendido ou o contrrio.
+
+10
+00:00:45,570 --> 00:00:49,810
+Agora l vamos receber um objeto de usurio.
+
+11
+00:00:49,920 --> 00:00:56,940
+Ento, sempre que  NULL, se no estamos autenticados ou  o usurio atualmente bloqueado.
+
+12
+00:00:56,970 --> 00:01:02,040
+Ento, o que podemos fazer aqui  que podemos verificar se o usurio s ser verdadeiro se o usurio estiver configurado.
+
+13
+00:01:02,040 --> 00:01:08,760
+Ento, se ns somos afiliados neste caso, podemos executar o cdigo que atualmente temos no escritrio
+
+14
+00:01:08,990 --> 00:01:12,670
+com sucesso, ento pegue-o de l e adicione aqui.
+
+15
+00:01:14,090 --> 00:01:20,880
+Seno no outro caso eu quero executar o cdigo que tenho na funo de logout todo o cdigo.
+
+16
+00:01:20,940 --> 00:01:24,440
+Alm desta linha de sada aqui.
+
+17
+00:01:24,600 --> 00:01:29,820
+Ento, aqui, construa esse cdigo e coloque-o no caso else.
+
+18
+00:01:31,090 --> 00:01:38,170
+Ento, se estamos mudando para ele indicado, vamos redirecionar e vamos emitir um evento e todo o conjunto  muitas
+
+19
+00:01:38,180 --> 00:01:39,720
+vezes igual a verdadeiro.
+
+20
+00:01:40,090 --> 00:01:45,640
+Caso contrrio, cancelaremos as inscries imit e o evento nunca navegar para a tela de
+
+21
+00:01:45,640 --> 00:01:48,690
+login e ser autenticado como falso com o pai.
+
+22
+00:01:48,760 --> 00:01:52,860
+Podemos nos livrar de com sucesso e sair.
+
+23
+00:01:52,900 --> 00:02:01,720
+Tambm Schrank podemos remover D  sucesso fora com sucesso chamar aqui e apenas cancelar o log de algo ou no
+
+24
+00:02:02,380 --> 00:02:04,710
+fazer nada se voc quiser.
+
+25
+00:02:04,750 --> 00:02:06,860
+Voc pode, obviamente, executar qualquer cdigo que precisar.
+
+26
+00:02:07,330 --> 00:02:14,590
+E agora s temos que ter certeza de que tudo que o ouvinte  chamado de melhor hora para ligar
+
+27
+00:02:14,680 --> 00:02:16,770
+ quando nosso aplicativo  iniciado.
+
+28
+00:02:17,050 --> 00:02:21,880
+Ento vamos ao nosso componente de aplicativo para isso.
+
+29
+00:02:21,880 --> 00:02:29,430
+O custo  este o primeiro componente que  instanciado e permite simplesmente implementar o ano
+
+30
+00:02:29,440 --> 00:02:37,660
+de interface que voc precisa importar do tribunal angular e que obviamente nos fora a adicionar o
+
+31
+00:02:37,690 --> 00:02:38,930
+DNG nele.
+
+32
+00:02:39,080 --> 00:02:44,620
+Methot agora neste mtodo eu queria chamar esse mtodo no meu servio de escritrio.
+
+33
+00:02:44,770 --> 00:02:47,450
+Ento, o que eu preciso para injetar o servio de escritrio  claro.
+
+34
+00:02:47,800 --> 00:02:49,880
+Ento eu vou fornecer ou no fornecer.
+
+35
+00:02:49,890 --> 00:02:56,020
+ fornecido um aplicativo Marchal eu vou simplesmente injetar voc do servio, referindo-se ao meu tipo
+
+36
+00:02:56,020 --> 00:03:00,450
+de servio de escritrio que voc precisa para importar aqui no topo.
+
+37
+00:03:02,370 --> 00:03:10,220
+E com isto injetado aqui em NZ em fim que tudo alcana para todo o servio e chama meu mtodo de Lisner.
+
+38
+00:03:10,230 --> 00:03:12,040
+Agora vamos salvar isso e experiment-lo.
+
+39
+00:03:12,300 --> 00:03:18,410
+Teoricamente, ns ainda deveramos ser impedidos de acessar o
+
+40
+00:03:21,090 --> 00:03:27,140
+treinamento, e ns ainda deveramos logar e sermos redirecionados.
+
+41
+00:03:27,930 --> 00:03:38,460
+Aqui ainda podemos comear nossos exerccios e potencialmente cancel-los e ir para exerccios anteriores para ver todos
+
+42
+00:03:38,460 --> 00:03:47,780
+os nossos exerccios que ainda podemos classificar, podemos navegar por aqui e podemos simplesmente sair
+
+43
+00:03:47,780 --> 00:03:55,420
+e, nesse caso, eu no deveria mais poder visitar treinamentos que trabalho.
+
+44
+00:03:55,480 --> 00:04:04,940
+Portanto, agora melhoramos nosso aplicativo certificando-nos de que temos um ouvinte global fora do palco no servio de desligamento que 
+
+45
+00:04:04,940 --> 00:04:11,290
+inicializado quando nosso aplicativo  iniciado e onde no fazemos o que precisamos fazer
+
+46
+00:04:11,500 --> 00:04:14,540
+para o Medicaid ou usurios no sofisticados.
+
+47
+00:04:14,620 --> 00:04:20,390
+E com isso, temos todas as funcionalidades no local que tornam nossa aplicao realmente incrvel.
+

@@ -1,0 +1,188 @@
+1
+00:00:02,120 --> 00:00:05,860
+De vuelta en la consola de firebase Volvamos a la historia de fuego.
+
+2
+00:00:06,220 --> 00:00:07,450
+Y estn bajo reglas.
+
+3
+00:00:07,450 --> 00:00:09,370
+Vamos a trabajar en las reglas de seguridad.
+
+4
+00:00:09,700 --> 00:00:14,620
+Ahora todos tienen acceso y recibimos una advertencia sobre esto porque simplemente
+
+5
+00:00:15,430 --> 00:00:20,070
+permitimos leer y ahora quiero permitir que lo lean y lo escriban.
+
+6
+00:00:20,140 --> 00:00:29,010
+Y lo hacemos agregando dos puntos y luego si si request off no es igual a null.
+
+7
+00:00:29,030 --> 00:00:31,520
+Ahora, qu significa esta extraa sintaxis?
+
+8
+00:00:31,520 --> 00:00:34,400
+Significa que debe permitir el acceso de
+
+9
+00:00:37,500 --> 00:00:42,600
+lectura y escritura a la solicitud entrante que tiene un usuario autenticado muertes.
+
+10
+00:00:42,680 --> 00:00:48,260
+Bsicamente, la informacin oculta en la propiedad si eso no es nulo.
+
+11
+00:00:48,390 --> 00:00:54,690
+Entonces, si el estado de autenticacin no es nulo, lo que sera si la autenticacin falla, entonces
+
+12
+00:00:54,690 --> 00:00:57,300
+deberamos tener acceso de lectura y escritura.
+
+13
+00:00:57,390 --> 00:01:06,270
+Si publico esto, puedo volver a mi aplicacin e iniciar sesin.
+
+14
+00:01:06,370 --> 00:01:07,270
+Y ahora
+
+15
+00:01:12,940 --> 00:01:21,790
+ves que todava no puedo acceder a todo ahora, no es tan extrao porque personalmente esperara un error o
+
+16
+00:01:21,850 --> 00:01:30,110
+porque ahora activamos la proteccin en fire store para que los usuarios no autenticados no puedan acceder a
+
+17
+00:01:30,100 --> 00:01:32,640
+esto y an as funcione.
+
+18
+00:01:33,800 --> 00:01:38,030
+Ahora, por supuesto, podra argumentar que s, simplemente lo registramos bien.
+
+19
+00:01:38,030 --> 00:01:47,330
+Es cierto, pero detrs de las escenas, en realidad, requiere que enviemos este token a la tienda de bomberos para que funcione.
+
+20
+00:01:47,330 --> 00:01:51,200
+Y resulta que automticamente hace esto por nosotros.
+
+21
+00:01:51,250 --> 00:01:57,830
+El disparo angular hace esto por nosotros si usamos el ngulo de fuego para administrar la autenticacin tambin.
+
+22
+00:01:58,340 --> 00:02:05,660
+As que solo porque nos registramos con el correo electrnico y la contrasea significaba que el ngulo de fuego o detrs de
+
+23
+00:02:05,660 --> 00:02:09,970
+las escenas tambin mostraba una ficha muerta que recibimos la ficha de Madchester.
+
+24
+00:02:09,970 --> 00:02:17,660
+Como mencion cuando le mostr esa diapositiva y la adjunto a las solicitudes salientes para que podamos trabajar con la base
+
+25
+00:02:17,660 --> 00:02:20,020
+de datos tal como lo hicimos antes.
+
+26
+00:02:20,120 --> 00:02:28,080
+Pero la principal diferencia es que ahora est protegido que un acceso autorizado ahora no es posible.
+
+27
+00:02:28,820 --> 00:02:36,620
+Y puedo probar este punto con un acceso no protegido que no est permitido deshabilitando temporalmente a nuestro desprevenido
+
+28
+00:02:36,650 --> 00:02:41,870
+para que podamos acceder a las pginas de entrenamiento sin ser datos autnticos.
+
+29
+00:02:41,870 --> 00:02:44,640
+As que acababa de regresar VERDADERO all solo por un segundo.
+
+30
+00:02:44,960 --> 00:02:51,940
+Y eso tambin ir al servicio de mi oficina y conectar este mtodo de cierre de sesin para
+
+31
+00:02:51,940 --> 00:02:58,850
+alcanzar mi ngulo de fuego del paquete a la parte de apagado y el registro de llamadas aqu.
+
+32
+00:02:58,970 --> 00:03:01,510
+Esto eliminar el token y todo.
+
+33
+00:03:01,520 --> 00:03:09,740
+As que permtanme mostrarles esto rpidamente si ahora guardo esto y vuelven a mi aplicacin. Todava veo todas estas cosas
+
+34
+00:03:09,740 --> 00:03:18,320
+y est un poco roto as que permtanme iniciar sesin rpidamente aqu para que me traten como bloqueado y golpear.
+
+35
+00:03:18,320 --> 00:03:18,910
+Cerrar sesin.
+
+36
+00:03:18,920 --> 00:03:20,360
+Ahora todo est claro.
+
+37
+00:03:20,360 --> 00:03:24,020
+Y ahora obtenemos un error o permisos faltantes o insuficientes.
+
+38
+00:03:24,200 --> 00:03:27,260
+Lo conseguimos porque tenemos una suscripcin en curso.
+
+39
+00:03:27,470 --> 00:03:35,090
+Y si tengo acceso a la pgina de negociacin ahora y tenemos la aplicacin, por lo tanto, no me
+
+40
+00:03:35,130 --> 00:03:39,000
+ofende que tambin obtengamos ese error porque no estamos encerrados.
+
+41
+00:03:39,000 --> 00:03:46,440
+As que desmiente mi punto de vista ahora voy a volver con el guardia y revertir el cdigo y tendremos que trabajar un poco para
+
+42
+00:03:46,440 --> 00:03:51,710
+que el cierre de sesin funcione correctamente porque incluso con el cdigo de recompensas se enfrentar un problema.
+
+43
+00:03:51,720 --> 00:03:58,460
+Si me conecto ahora, entonces todo funciona, pero si cierro la sesin todava obtenemos ese error y no quiero
+
+44
+00:03:58,460 --> 00:03:59,580
+obtener ese error.
+
+45
+00:03:59,810 --> 00:04:04,070
+As que trabajaremos en eso y rastrearemos todo el estado de manera diferente.
+
+46
+00:04:04,100 --> 00:04:09,830
+Pero el punto clave es que ahora tenemos proteccin y todo el material detrs de escena relacionado con nuestra sindicacin
+
+47
+00:04:10,160 --> 00:04:12,880
+con el token y dems se maneja para nosotros.
+

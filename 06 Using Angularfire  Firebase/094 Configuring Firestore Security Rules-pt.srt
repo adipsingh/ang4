@@ -1,0 +1,188 @@
+1
+00:00:02,120 --> 00:00:05,860
+De volta ao console do firebase Vamos voltar para a histria do fogo.
+
+2
+00:00:06,220 --> 00:00:07,450
+E eles esto sob regras.
+
+3
+00:00:07,450 --> 00:00:09,370
+Vamos trabalhar nas regras de segurana.
+
+4
+00:00:09,700 --> 00:00:14,620
+Agora todos tm acesso e recebemos um aviso sobre isso porque simplesmente
+
+5
+00:00:15,430 --> 00:00:20,070
+permitimos a leitura e agora eu quero permitir a leitura e gravao.
+
+6
+00:00:20,140 --> 00:00:29,010
+E fazemos isso adicionando dois pontos e, em seguida, se if request off no for igual a null.
+
+7
+00:00:29,030 --> 00:00:31,520
+Agora, o que essa sintaxe estranha significa?
+
+8
+00:00:31,520 --> 00:00:34,400
+Isso significa que voc deve permitir acesso
+
+9
+00:00:37,500 --> 00:00:42,600
+de leitura e gravao. A solicitao recebida tem uma morte de usurios autenticados.
+
+10
+00:00:42,680 --> 00:00:48,260
+Basicamente, a informao escondida na propriedade se no for nula.
+
+11
+00:00:48,390 --> 00:00:54,690
+Portanto, se o status de autenticao no for nulo, o que seria se a autenticao falhar,
+
+12
+00:00:54,690 --> 00:00:57,300
+devemos obter acesso de leitura e gravao.
+
+13
+00:00:57,390 --> 00:01:06,270
+Se eu publicar isso, posso voltar ao meu aplicativo e fazer o login.
+
+14
+00:01:06,370 --> 00:01:07,270
+E agora
+
+15
+00:01:12,940 --> 00:01:21,790
+voc v que eu ainda no consigo acessar tudo agora no  to estranho porque eu pessoalmente esperaria um erro
+
+16
+00:01:21,850 --> 00:01:30,110
+ou porque agora ativamos a proteo no armazenamento de incndio para que os usurios no autenticados no possam
+
+17
+00:01:30,100 --> 00:01:32,640
+acessar isso e ainda assim funcione.
+
+18
+00:01:33,800 --> 00:01:38,030
+Agora voc poderia, claro, argumentar, sim, fizemos o log correto.
+
+19
+00:01:38,030 --> 00:01:47,330
+ verdade, mas nos bastidores, na verdade, exige que enviemos esse token para disparar a loja para o trabalho.
+
+20
+00:01:47,330 --> 00:01:51,200
+E acontece que isso  feito automaticamente para ns.
+
+21
+00:01:51,250 --> 00:01:57,830
+Angular demitido faz isso por ns, se usarmos ngulo de fogo para gerenciar a autenticao tambm.
+
+22
+00:01:58,340 --> 00:02:05,660
+Ento, s porque ns nos conectamos com e-mail e senha significava que o ngulo de tiro ou os
+
+23
+00:02:05,660 --> 00:02:09,970
+bastidores tambm tinham tokens mortos que recebamos token de Madchester.
+
+24
+00:02:09,970 --> 00:02:17,660
+Como mencionei quando mostrei esse slide e o anexei a solicitaes de sada para que possamos trabalhar com o banco de
+
+25
+00:02:17,660 --> 00:02:20,020
+dados da mesma forma que fizemos antes.
+
+26
+00:02:20,120 --> 00:02:28,080
+Mas a principal diferena  que agora est protegido que um acesso autorizado agora no seja possvel.
+
+27
+00:02:28,820 --> 00:02:36,620
+E eu posso provar este ponto com o inofensivo pode um acesso que no  permitido, desabilitando temporariamente os nossos
+
+28
+00:02:36,650 --> 00:02:41,870
+desprevenidos para que possamos acessar as pginas de treinamento sem ser dados autnticos.
+
+29
+00:02:41,870 --> 00:02:44,640
+Ento eu acabei de retornar TRUE l apenas por um segundo.
+
+30
+00:02:44,960 --> 00:02:51,940
+E isso tambm ir para o meu servio de escritrio e conectar este mtodo de logout para alcanar
+
+31
+00:02:51,940 --> 00:02:58,850
+o meu ngulo de fogo do pacote para a parte de fora e chamar o sinal aqui.
+
+32
+00:02:58,970 --> 00:03:01,510
+Isso vai se livrar do token e tudo mais.
+
+33
+00:03:01,520 --> 00:03:09,740
+Ento deixe-me rapidamente mostrar isso para voc se eu agora salvar isso e eles voltarem para o meu aplicativo todos ainda ver
+
+34
+00:03:09,740 --> 00:03:18,320
+todas essas coisas e  um pouco quebrado, ento deixe-me rapidamente entrar aqui para que eu seja tratado como bloqueado e bateu.
+
+35
+00:03:18,320 --> 00:03:18,910
+Sair.
+
+36
+00:03:18,920 --> 00:03:20,360
+Agora tudo est claro.
+
+37
+00:03:20,360 --> 00:03:24,020
+E agora recebemos um erro ou permisses ausentes ou insuficientes.
+
+38
+00:03:24,200 --> 00:03:27,260
+Ns entendemos isso porque temos uma assinatura em andamento.
+
+39
+00:03:27,470 --> 00:03:35,090
+E se eu acessar a pgina de negociao agora e tivermos o aplicativo, portanto, E eu no estou ofendido
+
+40
+00:03:35,130 --> 00:03:39,000
+por termos tambm esse erro porque no estamos presos.
+
+41
+00:03:39,000 --> 00:03:46,440
+Assim, meu argumento  refutado agora. Voltarei ao guarda e inverteremos o cdigo, e teremos que fazer algum trabalho sobre o
+
+42
+00:03:46,440 --> 00:03:51,710
+logout para funcionar corretamente, pois mesmo com o cdigo de recompensas, o problema ser enfrentado.
+
+43
+00:03:51,720 --> 00:03:58,460
+Se eu fizer login agora, tudo funciona, mas se eu sair, ainda recebo esse erro e no quero
+
+44
+00:03:58,460 --> 00:03:59,580
+obter esse erro.
+
+45
+00:03:59,810 --> 00:04:04,070
+Ento, vamos trabalhar nisso e acompanharemos todos os estados de maneira diferente.
+
+46
+00:04:04,100 --> 00:04:09,830
+Mas a principal vantagem  que temos proteo agora e todo o material dos bastidores sobre nossa distribuio com o
+
+47
+00:04:10,160 --> 00:04:12,880
+token e assim por diante  gerenciado para ns.
+

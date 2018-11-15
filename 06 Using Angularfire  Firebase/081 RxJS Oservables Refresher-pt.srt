@@ -1,0 +1,384 @@
+1
+00:00:02,260 --> 00:00:04,180
+OK, ento  hora de um pouco de teoria.
+
+2
+00:00:04,240 --> 00:00:09,720
+Vamos usar o fogo angular neste mdulo e o fogo angular usar observveis.
+
+3
+00:00:09,730 --> 00:00:12,600
+Esse  o seu ativo principal, se voc quiser.
+
+4
+00:00:12,620 --> 00:00:17,290
+Portanto, precisamos entender o que os observveis de servio e assinaturas realmente so e
+
+5
+00:00:17,320 --> 00:00:18,360
+como isso funciona.
+
+6
+00:00:18,700 --> 00:00:21,090
+Ento ns temos um observvel e um observador.
+
+7
+00:00:21,100 --> 00:00:22,920
+Esses so termos que voc costuma ouvir.
+
+8
+00:00:23,020 --> 00:00:25,210
+Os dois esto conectados com uma assinatura.
+
+9
+00:00:25,390 --> 00:00:31,930
+E se voc usa angular, voc usa muito esse construto, na verdade, um projeto de curso de uma
+
+10
+00:00:31,930 --> 00:00:38,380
+hora ns j usamos um assunto que  um tipo especial de absorvvel, voc poderia dizer que ns
+
+11
+00:00:38,380 --> 00:00:43,200
+poderamos usar esse assunto para emitir valores chamando o prximo mtodo. subscrever mtodo.
+
+12
+00:00:43,450 --> 00:00:48,910
+Agora, em contraste com um cheque e absorvvel, seria algo que voc pode chamar de prximo, onde voc
+
+13
+00:00:48,910 --> 00:00:54,110
+pode apenas se inscrever e absorver, que emitem eventos com base em alguma outra fonte que ele envolve.
+
+14
+00:00:54,160 --> 00:01:00,040
+Por exemplo, voc poderia envolver esse evento de boto de dizer com um observvel e receber um
+
+15
+00:01:00,220 --> 00:01:06,160
+novo evento emitido que ser entregue  sua assinatura sempre que um boto for clicado em seu ncleo.
+
+16
+00:01:06,190 --> 00:01:12,430
+Todos os observveis tm mtodos gratuitos que podem ser acionados pela origem em que esto envolvidos ou
+
+17
+00:01:12,430 --> 00:01:13,710
+no caso do assunto.
+
+18
+00:01:13,770 --> 00:01:20,710
+Talvez por voc programaticamente e prximo Meffert um erro ou mtodo e um mtodo completo porque observveis podem
+
+19
+00:01:20,890 --> 00:01:27,850
+emitir um novo valor pode falhar ou pode completar e no emitir mais valores em todos esses casos.
+
+20
+00:01:27,910 --> 00:01:30,550
+Esses mtodos so simplesmente acionados ou chamados.
+
+21
+00:01:30,580 --> 00:01:37,770
+Voc poderia dizer agora, como eu disse, a NASA simplesmente envolve algo, por exemplo, eu dei o exemplo do boto
+
+22
+00:01:37,770 --> 00:01:38,040
+aqui.
+
+23
+00:01:38,060 --> 00:01:45,030
+Nmero um, poderia envolver a chamada de volta em uma solicitao de H2B que poderia ser bem-sucedida e, portanto, executada em
+
+24
+00:01:45,070 --> 00:01:51,700
+seguida e fornecer a resposta e tambm a execuo completa porque, uma vez que os requisitos de HTP solicitam valores
+
+25
+00:01:51,730 --> 00:01:56,930
+adicionais, espera-se por fontes de eventos diferentes, como por exemplo o basto que voc embrulha.
+
+26
+00:01:57,040 --> 00:02:02,380
+Isso pode ser diferente porque voc pode obter mais eventos no futuro.
+
+27
+00:02:02,380 --> 00:02:04,470
+Voc no sabe como o boto est sendo clicado.
+
+28
+00:02:04,720 --> 00:02:10,400
+ claro que, se voc voltar ao exemplo de solicitao de HTP que tambm pode falhar, nesse caso, ele tambm
+
+29
+00:02:10,420 --> 00:02:11,500
+chamaria o mtodo Aero.
+
+30
+00:02:11,590 --> 00:02:14,900
+E isso vai realmente tudo para completar ou para ser preciso.
+
+31
+00:02:14,950 --> 00:02:16,200
+Cancele o observvel.
+
+32
+00:02:16,240 --> 00:02:22,590
+Ento, se ocorrer um erro, todos vocs no recebero mais respostas ou eventos para serem precisos.
+
+33
+00:02:22,900 --> 00:02:24,350
+Ento isso  um observvel.
+
+34
+00:02:24,610 --> 00:02:30,490
+Podemos pensar nesses observveis como fluxos de dados.
+
+35
+00:02:30,490 --> 00:02:33,420
+Ento, um observvel raps tal fluxo de dados.
+
+36
+00:02:33,730 --> 00:02:35,980
+ tudo sobre trabalhos assncronos.
+
+37
+00:02:35,980 --> 00:02:40,660
+No final, teoricamente, voc tambm pode usar fluxos de dados sncronos.
+
+38
+00:02:40,660 --> 00:02:45,080
+Ento aqui est o exemplo concreto que recebemos um valor que foi submetido.
+
+39
+00:02:45,190 --> 00:02:47,500
+Vamos voltar ao exemplo do HTP.
+
+40
+00:02:47,530 --> 00:02:49,810
+Enviamos o pedido e uma resposta chegou.
+
+41
+00:02:49,810 --> 00:02:54,180
+Isso pode ser valioso ou estamos envolvendo um ouvinte de evento de boto.
+
+42
+00:02:54,190 --> 00:02:55,430
+Agora o boto foi clicado.
+
+43
+00:02:55,480 --> 00:02:56,890
+Ns recebemos um novo valor.
+
+44
+00:02:56,950 --> 00:02:59,570
+O objeto com dados do evento.
+
+45
+00:03:00,010 --> 00:03:03,960
+Agora o observador tem alguns mtodos que podem ser acionados.
+
+46
+00:03:04,120 --> 00:03:06,130
+E por valor ns conseguimos isso.
+
+47
+00:03:06,160 --> 00:03:08,920
+Digamos que seja um valor de sucesso um evento de sucesso.
+
+48
+00:03:08,920 --> 00:03:09,660
+Nenhum erro.
+
+49
+00:03:09,760 --> 00:03:12,340
+Portanto, o prximo mtodo  acionado.
+
+50
+00:03:12,340 --> 00:03:18,130
+Agora podemos obter mais valores para alguns observveis Abourezk pode apenas ser capaz de emitir um como o pedido de
+
+51
+00:03:18,130 --> 00:03:21,820
+HTP e digamos que todos esses valores sejam bem sucedidos sem erros.
+
+52
+00:03:21,820 --> 00:03:25,240
+Ento, o prximo  executado algumas vezes no Observer.
+
+53
+00:03:25,300 --> 00:03:27,960
+Agora, s vezes, tonsorial pode ser concludo.
+
+54
+00:03:28,030 --> 00:03:30,430
+Ento o mtodo completo  acionado.
+
+55
+00:03:30,430 --> 00:03:33,910
+Agora, outro absorvvel pode ter um fluxo diferente de dados.
+
+56
+00:03:33,940 --> 00:03:39,350
+Embora alguns valores bem sucedidos, mas, em seguida, pode ser um erro que executa o mtodo de erro.
+
+57
+00:03:39,350 --> 00:03:40,690
+O fim nunca  alcanado.
+
+58
+00:03:40,690 --> 00:03:42,250
+Nesse caso.
+
+59
+00:03:42,360 --> 00:03:47,620
+Ento, estes so observveis e isso , obviamente, altamente abstrato e terico.
+
+60
+00:03:47,740 --> 00:03:49,630
+Vamos ver isso em ao em um segundo.
+
+61
+00:03:49,630 --> 00:03:50,390
+No se preocupe.
+
+62
+00:03:50,490 --> 00:03:55,630
+E se voc quiser aprender ainda mais com muitos exemplos prticos, eu levo tudo a srio no meu
+
+63
+00:03:55,630 --> 00:04:00,010
+canal do YouTube, no qual voc tambm pode encontrar um link no final deste mdulo.
+
+64
+00:04:00,040 --> 00:04:03,740
+Ento, aqui est outra coisa muito legal sobre o Horrible's.
+
+65
+00:04:03,820 --> 00:04:08,710
+Ns obtemos o observvel e o observador e o observador pelo modo como lembrar  simplesmente conectar o
+
+66
+00:04:08,710 --> 00:04:12,470
+observvel atravs de uma assinatura, de modo que se informe sobre todos esses valores.
+
+67
+00:04:12,490 --> 00:04:14,800
+Erros ou concluses.
+
+68
+00:04:14,800 --> 00:04:20,080
+No entanto, a melhor coisa sobre observables  que voc pode usar operadores.
+
+69
+00:04:20,080 --> 00:04:29,470
+Os operadores so simplesmente alguns mtodos que voc coloca entre a emisso do evento no seu fluxo de dados e o seu
+
+70
+00:04:29,560 --> 00:04:30,200
+observador.
+
+71
+00:04:30,250 --> 00:04:30,870
+Ento, onde est voc.
+
+72
+00:04:30,870 --> 00:04:33,270
+Ento faa algo com os dados.
+
+73
+00:04:33,280 --> 00:04:35,620
+Um operador pode ser o operador do mapa.
+
+74
+00:04:35,780 --> 00:04:43,090
+O ex-chefe  uma biblioteca que, na verdade, a Biblioteca ISDE, que nos oferece toda essa funcionalidade
+
+75
+00:04:43,210 --> 00:04:49,420
+absorvvel, tem toneladas, toneladas e toneladas de operadores, e veremos alguns deles neste mdulo.
+
+76
+00:04:49,420 --> 00:04:52,600
+Novamente, para mais operadores, verifique se o YouTube est morto.
+
+77
+00:04:52,600 --> 00:04:54,180
+Eu estava mencionando.
+
+78
+00:04:54,290 --> 00:05:00,870
+Ento, chegamos aos operadores, o que os operadores fazem enquanto esto em execuo antes de realmente recebermos o valor.
+
+79
+00:05:00,880 --> 00:05:01,780
+Nosso observador.
+
+80
+00:05:01,780 --> 00:05:04,390
+Mas depois que o valor foi emitido.
+
+81
+00:05:04,750 --> 00:05:09,590
+Portanto, todos os valores entram em um operador e, em seguida, dependem do operador.
+
+82
+00:05:09,730 --> 00:05:11,060
+Algo acontece com eles.
+
+83
+00:05:11,170 --> 00:05:17,380
+O operador de mapa, por exemplo, nos permite especificar uma funo que  executada em todos os valores que podemos
+
+84
+00:05:17,380 --> 00:05:19,110
+usar para transformar o valor.
+
+85
+00:05:19,300 --> 00:05:25,630
+Como o mtodo de mapeamento nas estruturas de javascript, obtemos valores transformados nesse caso.
+
+86
+00:05:25,720 --> 00:05:29,350
+E o DS transformou os valores em dedi alcanou o observador.
+
+87
+00:05:29,350 --> 00:05:36,220
+O legal  que ns podemos encadear operadores e, portanto, voc pode reconstruir cadeias complexas de operaes de manipulao
+
+88
+00:05:36,220 --> 00:05:39,990
+de valor onde voc pode transformar dados em primeiro lugar.
+
+89
+00:05:40,120 --> 00:05:47,350
+Ento voc at mesmo controla a coleo deles para que voc receba apenas um valor a cada dois segundos e
+
+90
+00:05:47,350 --> 00:05:54,310
+este exemplo seu e coisas assim fazem o que voc pode fazer com operadores e esta  uma das
+
+91
+00:05:54,310 --> 00:05:55,990
+partes mais legais sobre observveis.
+
+92
+00:05:56,020 --> 00:06:01,880
+Os muitos operadores que voc pode usar para transformar os dados manipulam os dados e assim por diante.
+
+93
+00:06:01,930 --> 00:06:08,260
+Ainda assim eu poderia imaginar que isso  altamente terico. Ento por que no mergulhamos e duvidamos disso?
+
+94
+00:06:08,260 --> 00:06:13,660
+Voc tem pelo menos uma compreenso bsica do que  observvel e do que se trata.
+
+95
+00:06:13,870 --> 00:06:19,660
+Vamos usar o fogo angular que abrange todo esse conceito, mas que tambm facilita a compreenso
+
+96
+00:06:19,660 --> 00:06:22,350
+de que, desde que surgiram exemplos reais.
+

@@ -1,0 +1,100 @@
+1
+00:00:02,500 --> 00:00:06,660
+Entonces en la ltima conferencia aadimos el registro y firmamos en la forma de firebase.
+
+2
+00:00:06,970 --> 00:00:10,890
+Y ahora nuestra aplicacin se ha roto porque ya no almacenamos a un usuario.
+
+3
+00:00:11,070 --> 00:00:13,130
+No, ya no almacenar uno aqu.
+
+4
+00:00:13,300 --> 00:00:18,390
+En cambio, voy a almacenar est apagado, que es un booleano en el que inicialmente debera ser falso.
+
+5
+00:00:19,790 --> 00:00:21,440
+Ahora es todo el nombre del mtodo.
+
+6
+00:00:21,470 --> 00:00:25,290
+Vamos a nombrarlo, est autenticado para que no haya ningn conflicto aqu.
+
+7
+00:00:25,670 --> 00:00:27,820
+Entonces, si cualquier cdigo es un booleano
+
+8
+00:00:28,070 --> 00:00:32,900
+Si hacemos login con xito aqu se llama con xito.
+
+9
+00:00:33,140 --> 00:00:39,760
+Entonces, con todo aqu con xito, quiero establecer que esto a menudo se dicte como verdadero.
+
+10
+00:00:40,490 --> 00:00:49,530
+Y al cerrar la sesin, quiero configurarlo en falso y esto significa que puedo eliminar esta asignacin de usuario aqu y, para obtener el
+
+11
+00:00:49,530 --> 00:00:51,360
+usuario, puedo deshacerme de eso.
+
+12
+00:00:51,360 --> 00:00:54,990
+Eso no va a funcionar, todo est en la mano de Yabber.
+
+13
+00:00:54,990 --> 00:00:58,570
+Esto es autenticarlo.
+
+14
+00:00:58,680 --> 00:01:02,180
+Si guardamos esto, volvemos a nuestra aplicacin.
+
+15
+00:01:02,190 --> 00:01:06,130
+Tratemos de iniciar sesin nuevamente con credenciales vlidas.
+
+16
+00:01:06,330 --> 00:01:07,340
+Ahora funciona.
+
+17
+00:01:07,350 --> 00:01:10,110
+Ahora podemos navegar de nuevo.
+
+18
+00:01:10,140 --> 00:01:18,210
+Esta es una forma de hacer esto y no necesariamente es la peor, pero enfrentaremos un problema si realmente
+
+19
+00:01:18,210 --> 00:01:22,170
+comenzamos a trabajar con recursos protegidos en el servidor.
+
+20
+00:01:22,530 --> 00:01:30,830
+Si bloqueamos nuestra base de datos de firebase para que la base de datos de fireresterm tengamos que demostrarle a pap y a la
+
+21
+00:01:30,840 --> 00:01:36,780
+base de firebase que estamos ofendiendo odiando y enviando un solo Boulia y no es suficiente porque
+
+22
+00:01:36,780 --> 00:01:38,410
+cualquiera podra hacer eso.
+
+23
+00:01:38,580 --> 00:01:44,170
+En su lugar, tendremos que enviar un token de deudas emitidas por Firebase.
+
+24
+00:01:44,460 --> 00:01:49,050
+Echemos un vistazo a lo que quiero decir con eso y cmo funcionan realmente las aplicaciones de autenticacin y de
+
+25
+00:01:49,050 --> 00:01:49,740
+una sola pgina.
+

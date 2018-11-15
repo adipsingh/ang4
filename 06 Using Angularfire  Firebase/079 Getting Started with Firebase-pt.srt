@@ -1,0 +1,132 @@
+1
+00:00:02,170 --> 00:00:04,130
+Eu sou toda a pgina do firebase agora.
+
+2
+00:00:04,180 --> 00:00:07,510
+E como eu disse,  um provedor de servios que, claro, cobra dinheiro.
+
+3
+00:00:07,630 --> 00:00:13,960
+Voc pode verificar a pgina de preos para descobrir o que voc pagar e eles tm um plano de nvel gratuito
+
+4
+00:00:13,960 --> 00:00:14,880
+muito generoso aqui.
+
+5
+00:00:14,950 --> 00:00:20,170
+Ento as coisas que vamos usar aqui neste mdulo devem ser absolutamente livres.
+
+6
+00:00:20,200 --> 00:00:26,770
+Se voc us-los na mesma quantidade que eu usei aqui neste curso, se voc exceder esses
+
+7
+00:00:26,770 --> 00:00:29,820
+limites, voc no ficar quebrado em algumas horas.
+
+8
+00:00:29,890 --> 00:00:34,150
+Voc receber um aviso e nem precisar de um carto de crdito para comear.
+
+9
+00:00:34,210 --> 00:00:36,160
+Ento voc est absolutamente seguro.
+
+10
+00:00:36,160 --> 00:00:37,390
+Ento, isso  preo.
+
+11
+00:00:37,510 --> 00:00:39,390
+E quanto aos servios que vamos usar.
+
+12
+00:00:39,650 --> 00:00:47,080
+Se voc clicar em produtos, os servios que usaremos sero, na verdade, a loja de firers da nuvem, que 
+
+13
+00:00:47,080 --> 00:00:55,180
+a mais recente soluo baseada em dados que podemos usar e que  altamente escalvel e rpida, alm de usar autenticao.
+
+14
+00:00:55,180 --> 00:01:01,780
+Portanto, estes dois servios aqui agora voc pode sempre mergulhar nas docas aqui para saber mais sobre os servios,
+
+15
+00:01:01,840 --> 00:01:05,870
+se houver alguns casos que no so cobertos como curso como discours.
+
+16
+00:01:05,890 --> 00:01:09,240
+Como mencionei,  claro que no h um tribunal de mergulho profundo.
+
+17
+00:01:09,630 --> 00:01:16,180
+Agora, para comear, o que voc precisa fazer  ter que ir ao seu console do console baseado em incndio e para
+
+18
+00:01:16,180 --> 00:01:21,730
+isso voc precisar de uma conta do Google e, em seguida, voc precisa criar um novo projeto aqui.
+
+19
+00:01:21,790 --> 00:01:24,420
+Ento eu vou fazer isso rapidamente e vou nome-lo.
+
+20
+00:01:24,430 --> 00:01:31,060
+Energy fitness tracker voc pode escolher qualquer nome que quiser agora escolher a sua regio que no afeta
+
+21
+00:01:31,120 --> 00:01:32,480
+o preo pelo caminho.
+
+22
+00:01:32,770 --> 00:01:35,160
+Em seguida, clique em Criar projeto.
+
+23
+00:01:35,290 --> 00:01:41,080
+Agora, isso configurar um projeto do Firebase para voc, onde voc poder acessar todos esses servios.
+
+24
+00:01:41,110 --> 00:01:42,140
+Eu estava mencionando.
+
+25
+00:01:42,210 --> 00:01:48,250
+Agora, novamente, usaremos o banco de dados apenas na autenticao, mas voc ver que esses so seus servios principais, o que
+
+26
+00:01:48,580 --> 00:01:53,090
+tambm  indicado pelo fato de que eles so os dois principais servios que vemos aqui.
+
+27
+00:01:53,140 --> 00:01:59,230
+Ento, esse  o console do Firebase e fique  vontade para navegar por ele e explorar suas
+
+28
+00:01:59,980 --> 00:02:01,920
+ofertas de servio em nosso aplicativo.
+
+29
+00:02:01,930 --> 00:02:10,000
+Eu quero comear adicionando um banco de dados para buscar os exerccios que oferecemos no a partir do nosso servio, onde
+
+30
+00:02:10,000 --> 00:02:11,140
+atualmente os codificamos.
+
+31
+00:02:11,160 --> 00:02:16,720
+Voc deu uma olhada no nosso servio de treinamento que temos todos os nossos exerccios codificados
+
+32
+00:02:16,720 --> 00:02:21,790
+em vez de querer obt-los do Firebase e eu vou usar um incndio singular.
+
+33
+00:02:21,790 --> 00:02:23,860
+Agora o que  um singular demitido.
+

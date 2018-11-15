@@ -1,0 +1,140 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>084 Operators  RxJS 6</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>In case you're using RxJS 6 or higher (check the <code>package.json</code> ) AND you're NOT using <code>rxjs-compat</code>  (which you can install via <code>npm install --save rxjs-compat</code>  - no changes to the code would then be required), the following adjustment needs to be made when working with RxJS operators.</p>
+
+<p>Instead of</p>
+
+
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">....snapshotChanges()
+    .map(docArray =&gt; { ... })</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>you should use the <code>pipe()</code>  method provided by RxJS:</p>
+
+
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">....snapshotChanges()
+    .pipe(map(docArray =&gt; { ... }))</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>It simply wrap the RxJS operator you want to use - in this case <code>map()</code> . You can actually use multiple <code>pipe()</code>  calls on the same observable - simply chain them after each other.</p>
+
+
+
+
+
+
+
+
+
+
+
+<p>For this to work, you'll need to import the <code>map()</code>  method though:</p>
+
+
+
+
+
+
+
+
+
+
+
+<p><code>import { map } from 'rxjs/operators';</code> </p>
+
+
+
+
+
+
+
+
+
+
+
+<p>After adding this at the top of your file, you should be good to go.</p>
+
+
+
+
+
+
+
+
+
+
+
+<p>Max</p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>

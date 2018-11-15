@@ -1,0 +1,40 @@
+1
+00:00:02,150 --> 00:00:05,790
+Neste mdulo fizemos muitas coisas legais.
+
+2
+00:00:06,100 --> 00:00:12,010
+Adicionamos firebase e o ngulo de armazenamento de fogo para ser preciso.
+
+3
+00:00:12,160 --> 00:00:17,290
+Ns conectamos a nossa abertura angular atravs do ngulo de fogo.
+
+4
+00:00:17,320 --> 00:00:24,960
+Voc aprende sobre as vrias maneiras de usar o fogo angular para configurar diferentes tipos de assinaturas.
+
+5
+00:00:25,060 --> 00:00:32,110
+Referindo-se aos incndios angulares Stallworth para trabalhar com dados para manipular dados para adicionar dados e obter dados
+
+6
+00:00:32,110 --> 00:00:38,440
+de curso e voc aprendeu a implementar autenticao com Angel de fogo e base de fogo e
+
+7
+00:00:38,440 --> 00:00:43,360
+como proteger seus recursos de servio usando a abordagem de autenticao de dados.
+
+8
+00:00:43,360 --> 00:00:51,160
+Agora, obtemos um aplicativo em tempo real legal que  alimentado a partir de diferentes instncias de aplicativos em execuo, de
+
+9
+00:00:51,250 --> 00:00:59,380
+modo que estamos compartilhando dados em tempo real sem recarregar a pgina e eu diria que esse  um timo local para
+
+10
+00:00:59,380 --> 00:01:00,280
+esse aplicativo.
+
